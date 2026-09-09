@@ -1,0 +1,39 @@
+{
+    "variables": {
+        "yc_zone": "ru-central1-d",
+        "yc_subnet_id": "fl8pev0k5h5cr3l"
+    },
+    "builders": [
+        {
+            "service_account_key_file": "{{user `service_account_key_file`}}",
+            "folder_id": "{{user `yc_folder_id`}}",
+            "zone": "{{user `yc_zone`}}",
+            "subnet_id": "{{user `yc_subnet_id`}}",
+
+            "type": "yandex",
+
+            "image_name": "ubuntu-2604-docker-v{{timestamp}}",
+            "image_family": "ubuntu-2604-docker",
+            "image_description": "Ubuntu 26.04 with docker,tmux and htop",
+            "source_image_family": "ubuntu-2604-lts",
+
+            "use_ipv4_nat": true,
+            "disk_type": "network-hdd",
+            "ssh_username": "ubuntu"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "inline": [
+                "echo 'Update Package List'",
+                "sudo apt-get update -y",
+                "echo 'Install Package'",
+                "sudo apt-get install -y htop tmux",
+                "curl -fsSL https://get.docker.com -o get-docker.sh",
+                "sudo sh get-docker.sh",
+                "mv get-docker.sh test.sh"
+            ]
+        }
+    ]
+}
