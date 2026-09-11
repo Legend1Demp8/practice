@@ -183,6 +183,8 @@ docker login
 
 ## Задача 2
 ### Результат:
+<img width="1637" height="505" alt="2" src="https://github.com/user-attachments/assets/20e6d881-ca85-4801-a5d4-02ba8e717b90" />
+
 ### Шаги выполнения:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
@@ -216,6 +218,11 @@ CONTAINER ID   IMAGE                             COMMAND                  CREATE
 0e3b72e9633f   docker-hub-login/custom-nginx:1.0.0   "/docker-entrypoint.…"   3 minutes ago   Up 3 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   custom-nginx-t2
 ```
 </details>
+* Выполнил команду 
+```
+~# <img width="1637" height="505" alt="2" src="https://github.com/user-attachments/assets/c9dfaa3f-986f-41ed-960d-defb8bf78922" />
+date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html
+``
 
 ## Задача 3
 ### Результат:
