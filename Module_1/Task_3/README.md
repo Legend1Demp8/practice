@@ -413,6 +413,7 @@ drwxrwxr-x 2 1000 1000 4.0K Sep 11 13:58 my-nginx-project
 <img width="1198" height="686" alt="image" src="https://github.com/user-attachments/assets/0dbd1ab1-35f9-4cbd-b21e-9a6fa4b9b261" />
 
 Делаю то что просят
+---
 <img width="662" height="843" alt="image" src="https://github.com/user-attachments/assets/462be22d-3644-42d9-9ce8-016110f243b1" />
 
 Финальное задание. 
