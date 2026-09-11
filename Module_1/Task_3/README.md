@@ -184,6 +184,8 @@ docker login
 ## Задача 2
 ### Результат:
 <img width="1637" height="505" alt="2" src="https://github.com/user-attachments/assets/20e6d881-ca85-4801-a5d4-02ba8e717b90" />
+Прошу заметить что grep 127.0.0.1:8080 не работает
+<img width="1592" height="214" alt="image" src="https://github.com/user-attachments/assets/0a8ef59e-cb56-438e-ab9b-f83fc1ee09b0" />
 
 ### Шаги выполнения:
 <details>
