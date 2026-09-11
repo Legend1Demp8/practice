@@ -323,13 +323,64 @@ curl: (56) Recv failure: Connection reset by peer
 
 ## Задача 4
 ### Результат:
+Установка образов и запуск двух контейнеров centos и debian а также отображение содержимого текущего каталога
+<img width="991" height="407" alt="image" src="https://github.com/user-attachments/assets/c83ceb75-4d44-49bc-8ff2-96a8a5b0030b" />
+Создание файла в контейнере Centos а также в основной системе и отображение каталога /data в контейнере debian
+<img width="722" height="560" alt="image" src="https://github.com/user-attachments/assets/6fa89d3f-eee8-449a-9b30-136713674263" />
+
 ### Шаги выполнения:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
   
-  * Элемент списка 1
-  * Элемент списка 2
-  * Элемент списка 3
+* Загрузка образов и запуск контейнеров CentOS и Debian
+```
+~# docker run -dit -v $(pwd):/data --name "centos7" centos:centos7
+~# docker run -dit -v $(pwd):/data --name "debian-trixie" debian:trixie
+```
+* Вывод текущего каталога
+```
+~# ls -lah
+total 68K
+drwxr-x--- 6 ubuntu ubuntu 4.0K Sep 11 13:27 .
+drwxr-xr-x 3 root   root   4.0K Sep 11 11:31 ..
+-rw------- 1 ubuntu ubuntu  491 Sep 11 16:00 .bash_history
+-rw-r--r-- 1 ubuntu ubuntu  220 Feb 13  2026 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu 3.7K Feb 13  2026 .bashrc
+drwx------ 2 ubuntu ubuntu 4.0K Sep 11 11:32 .cache
+drwx------ 3 ubuntu ubuntu 4.0K Sep 11 14:19 .docker
+-rw-r--r-- 1 ubuntu ubuntu  807 Feb 13  2026 .profile
+drwx------ 2 ubuntu ubuntu 4.0K Sep 11 11:31 .ssh
+-rw------- 1 ubuntu ubuntu 2.2K Sep 11 13:23 .viminfo
+-rw-rw-r-- 1 ubuntu ubuntu  24K Sep 11 11:35 get-docker.sh
+drwxrwxr-x 2 ubuntu ubuntu 4.0K Sep 11 13:58 my-nginx-project
+```
+* Вхожу в контейнер Centos и создаю файл в /data а также выхожу из контейнера
+```
+~# docker exec -it centos7 bash
+~# touch /data/centos.txt
+~# exit
+```
+* Создаю дополнительный файл в основной системе и вхожу в Debian, отображаю директорию /data
+```
+~# touch ./ubuntu.txt
+~# docker exec -it debian-trixie bash
+~# ls -lah /data/
+total 68K
+drwxr-x--- 6 1000 1000 4.0K Sep 11 21:17 .
+drwxr-xr-x 1 root root 4.0K Sep 11 21:15 ..
+-rw------- 1 1000 1000  491 Sep 11 16:00 .bash_history
+-rw-r--r-- 1 1000 1000  220 Feb 13  2026 .bash_logout
+-rw-r--r-- 1 1000 1000 3.7K Feb 13  2026 .bashrc
+drwx------ 2 1000 1000 4.0K Sep 11 11:32 .cache
+drwx------ 3 1000 1000 4.0K Sep 11 14:19 .docker
+-rw-r--r-- 1 1000 1000  807 Feb 13  2026 .profile
+drwx------ 2 1000 1000 4.0K Sep 11 11:31 .ssh
+-rw------- 1 1000 1000 2.2K Sep 11 13:23 .viminfo
+-rw-r--r-- 1 root root    0 Sep 11 21:16 centos.txt
+-rw-rw-r-- 1 1000 1000  24K Sep 11 11:35 get-docker.sh
+drwxrwxr-x 2 1000 1000 4.0K Sep 11 13:58 my-nginx-project
+-rw-r--r-- 1 root root    0 Sep 11 21:17 ubuntu.txt
+```
 </details>
 
 ## Задача 5
