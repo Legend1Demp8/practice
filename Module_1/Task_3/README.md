@@ -168,6 +168,16 @@ docker login
 ```
 ~# docker push docker-hub-login/my-nginx:1.0.0
 ```
+* Начал выполнять проверку себя, удалил все образы и контейнеры в системе
+```
+~# docker rmi -f $(docker images -aq)
+~# docker rm -f $(docker ps -aq)
+~# docker pull docker-hub-login/my-nginx:1.0.0
+~# docker inspect docker-hub-login/my-nginx:1.0.0
+~# docker run -d docker-hub-login/my-nginx:1.0.0
+~# curl http://172.17.0.2
+```
+* Всё готово
 
 </details>
 
