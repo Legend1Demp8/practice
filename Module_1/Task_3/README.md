@@ -34,7 +34,21 @@ docker pull nginx:1.29.0
 IMAGE          ID             DISK USAGE   CONTENT SIZE   EXTRA
 nginx:1.29.0   3ab4ed065a14        282MB         75.4MB
 ```
+* Посмотрел подробную информацию о об образе
+```
+docker inspect nginx:1.29.0
+```
+* Убедился что скачал образ из официального репозитория полагаясь на вывод команды inspect
+```
+"Identity": {
+            "Pull": [
+                {
+                    "Repository": "docker.io/library/nginx"
+                }
+            ]
+        }
 
+```
 
 
 </details>
