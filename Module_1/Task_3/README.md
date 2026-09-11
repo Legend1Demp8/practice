@@ -231,6 +231,7 @@ CONTAINER ID   IMAGE                             COMMAND                  CREATE
 <img width="1324" height="247" alt="image" src="https://github.com/user-attachments/assets/e29fe83c-a5eb-44c4-93f7-6ca5806e757c" />
 
 <img width="783" height="350" alt="image" src="https://github.com/user-attachments/assets/5263b1a3-faf1-410a-856e-d06fe9b58b60" />
+
 Переназначаю порт контейнера с 80 на 81, а также проброс портов с 8080->80 на 8080->81 не удаляя контейнер
 <img width="1341" height="438" alt="image" src="https://github.com/user-attachments/assets/b42197e5-3dea-46c7-a960-1bd79bcd7b06" />
 
