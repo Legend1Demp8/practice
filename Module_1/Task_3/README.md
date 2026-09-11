@@ -1,5 +1,5 @@
 ## Задача 1
-### Результат:
+### Результат: [https://hub.docker.com/repository/docker/legend1demp9/custom-nginx/general](https://hub.docker.com/repository/docker/legend1demp9/custom-nginx/general)
 ### Шаги выполнения:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
