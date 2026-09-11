@@ -187,9 +187,34 @@ docker login
 <details>
   <summary>Нажмите, чтобы открыть</summary>
   
-  * Элемент списка 1
-  * Элемент списка 2
-  * Элемент списка 3
+* Запустил обаз в необходимом формате с помощью команды
+```
+~# docker run -p 8080:80 --name "IvanovIvanIvanovich-custom-nginx-t2" -d docker-hub-login/custom-nginx:1.0.0
+```
+* Убедился что контейнер запущен и перенаправление портов работает
+```
+~# docker ps
+CONTAINER ID   IMAGE                             COMMAND                  CREATED         STATUS         PORTS                                     NAMES
+0e3b72e9633f   docker-hub-login/custom-nginx:1.0.0   "/docker-entrypoint.…"   9 seconds ago   Up 8 seconds   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   IvanovIvanIvanovich-custom-nginx-t2
+
+~# curl http://127.0.0.1:8080
+<html>
+   <head>
+      Hey, Netology
+   </head>
+   <body>
+      <h1>I will be DevOps Engineer!</h1>
+   </body>
+</html>
+```
+* Переименовал уже запущенный контейнер
+```
+~# docker rename IvanovIvanIvanovich-custom-nginx-t2 custom-nginx-t2
+
+~# docker ps
+CONTAINER ID   IMAGE                             COMMAND                  CREATED         STATUS         PORTS                                     NAMES
+0e3b72e9633f   docker-hub-login/custom-nginx:1.0.0   "/docker-entrypoint.…"   3 minutes ago   Up 3 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   custom-nginx-t2
+```
 </details>
 
 ## Задача 3
