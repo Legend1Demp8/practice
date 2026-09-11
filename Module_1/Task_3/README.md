@@ -410,7 +410,10 @@ drwxrwxr-x 2 1000 1000 4.0K Sep 11 13:58 my-nginx-project
 <img width="1035" height="607" alt="image" src="https://github.com/user-attachments/assets/7f9e58fb-eefe-453b-86c0-e49eef6bec37" />
 Нужен второй токен, первый устарел с прошлого запуска
 <img width="987" height="53" alt="image" src="https://github.com/user-attachments/assets/cc26b1e8-a5b2-4102-9872-69c37ee94efd" />
-
+Финальное задание. Я удалил файл compose.yaml и перезапустил проект , пришло уведомление от Docker Compose, что он обнаружил контейнеры Сироты.
+В проекте task-5 по факту запущено 2 контейнера а новый перезапуск показывает что запустить нужно всего один
+Для Compose источник правды всегда файл .yaml поэтому он мне предложил удалить контейнер сироту
+<img width="1638" height="600" alt="image" src="https://github.com/user-attachments/assets/2e45c222-c9a7-4a35-ba2e-605e0b7a3eaa" />
 
 ### Шаги выполнения:
 <details>
@@ -491,4 +494,29 @@ ssh -L 9000:localhost:9000 ubuntu@8.8.8.8
 ~# docker logs task5-portainer-1 2>&1 | grep setup_token
 ```
 * Делаю в веб морде то что просят
+* Удаляю файл compose.yaml
+```
+~# mv compose.yaml /root/compose.yaml_temp
+```
+* Перезапускаю Compose
+```
+~# docker compose up -d
+WARN[0000] Found orphan containers (task5-portainer-1) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.
+[+] up 1/1
+ ✔ Container task5-registry-1 Running
+```
+* Удаляю контейнер-сироту
+```
+~# docker compose up -d --remove-orphans
+[+] up 2/2
+ ✔ Container task5-registry-1  Running                                                                                                                                                                  0.0s
+ ✔ Container task5-portainer-1 Removed
+```
+* Выключаю проект 
+```
+~# docker compose down
+[+] down 2/2
+ ✔ Container task5-registry-1 Removed                                                                                                                                                                   0.1s
+ ✔ Network task5_default      Removed
+```
 </details>
