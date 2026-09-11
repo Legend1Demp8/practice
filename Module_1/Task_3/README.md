@@ -24,6 +24,19 @@ Server: Docker Engine - Community
   ~# docker compose version
   Docker Compose version v5.5.1
   ```
+* Скачал образ nginx с версией 1.29.0 из DockerHub
+```
+docker pull nginx:1.29.0
+```
+* Проверил что образ скачался 
+```
+~# docker images
+IMAGE          ID             DISK USAGE   CONTENT SIZE   EXTRA
+nginx:1.29.0   3ab4ed065a14        282MB         75.4MB
+```
+
+
+
 </details>
 
 ## Задача 2
