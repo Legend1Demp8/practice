@@ -229,6 +229,7 @@ CONTAINER ID   IMAGE                             COMMAND                  CREATE
 ## Задача 3
 ### Результат:
 <img width="1324" height="247" alt="image" src="https://github.com/user-attachments/assets/e29fe83c-a5eb-44c4-93f7-6ca5806e757c" />
+<img width="783" height="350" alt="image" src="https://github.com/user-attachments/assets/5263b1a3-faf1-410a-856e-d06fe9b58b60" />
 
 ### Шаги выполнения:
 <details>
@@ -253,6 +254,39 @@ docker attach custom-nginx-t2
 ```
 ~# apt-get update
 ~# apt-get install -y vim
+```
+* Меняю порт в дефолтном сайте NGINX с 80 на 81 и проверяю это внутри контейнера а также выхожу из контейнера
+```
+~# vim /etc/nginx/conf.d/default.conf
+~# nginx -s reload
+~# curl http://127.0.0.1:80 ; curl http://127.0.0.1:81
+curl: (7) Failed to connect to 127.0.0.1 port 80 after 0 ms: Couldn't connect to server
+<html>
+   <head>
+      Hey, Netology
+   </head>
+   <body>
+      <h1>I will be DevOps Engineer!</h1>
+   </body>
+</html>
+~# exit
+```
+* Проверяю прослушиваемые порты на основной машине все без изменений
+```
+~# ss -tlpn | grep 8080
+LISTEN 0      4096         0.0.0.0:8080      0.0.0.0:*    users:(("docker-proxy",pid=2130,fd=8))
+LISTEN 0      4096            [::]:8080         [::]:*    users:(("docker-proxy",pid=2135,fd=8))
+```
+* Проверяю пробросы портов в свой контейнер
+```
+~# docker port custom-nginx-t2
+80/tcp -> 0.0.0.0:8080
+80/tcp -> [::]:8080
+```
+* Пытаюсь воспользоваться пробросом порта
+```
+~# curl http://127.0.0.1:8080
+curl: (56) Recv failure: Connection reset by peer
 ```
 </details>
 
