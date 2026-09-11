@@ -237,6 +237,10 @@ CONTAINER ID   IMAGE                             COMMAND                  CREATE
 Переназначаю порт контейнера с 80 на 81, а также проброс портов с 8080->80 на 8080->81 не удаляя контейнер
 <img width="1341" height="438" alt="image" src="https://github.com/user-attachments/assets/b42197e5-3dea-46c7-a960-1bd79bcd7b06" />
 
+Удалил контейнер не останавливая его
+<img width="1305" height="398" alt="image" src="https://github.com/user-attachments/assets/88d7c121-6c07-48dc-9b5c-d2cb2071c717" />
+
+
 ### Шаги выполнения:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
@@ -308,6 +312,12 @@ curl: (56) Recv failure: Connection reset by peer
 ```
 ~# systemctl start docker
 ~# docker start custom-nginx-t2
+```
+* Удалил контейнер не останавливая его
+```
+~# docker ps
+~# docker rm -f custom-nginx-t2
+~# docker ps -a
 ```
 </details>
 
