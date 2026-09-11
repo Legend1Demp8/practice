@@ -385,11 +385,30 @@ drwxrwxr-x 2 1000 1000 4.0K Sep 11 13:58 my-nginx-project
 
 ## Задача 5
 ### Результат:
+Создаю директорию, а также создаю файлы Docker compose и запускаю. (Вижу, что docker compose видит два конфига но запускает только один)
+Прочитав инструкцию понял что Docker compose предпочитает первый вариант над вторым для запуска
+<img width="1257" height="290" alt="image" src="https://github.com/user-attachments/assets/8b2168b3-f9b8-49b2-af6f-58183ab007da" />
+
 ### Шаги выполнения:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
   
-  * Элемент списка 1
-  * Элемент списка 2
-  * Элемент списка 3
+* Создаю папку и запрашиваемые файлы
+```
+~# mkdir -p /tmp/netology/docker/task5/
+~# vim /tmp/netology/docker/task5/compose.yaml
+~# vim /tmp/netology/docker/task5/docker-compose.yaml
+~# cd /tmp/netology/docker/task5/
+~# docker compose up -d
+```
+* Проверяю что запустилось
+```
+~# docker compose ps
+WARN[0000] Found multiple config files with supported names: /tmp/netology/docker/task5/compose.yaml, /tmp/netology/docker/task5/docker-compose.yaml
+WARN[0000] Using /tmp/netology/docker/task5/compose.yaml
+WARN[0000] /tmp/netology/docker/task5/compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+NAME                IMAGE                           COMMAND        SERVICE     CREATED          STATUS          PORTS
+task5-portainer-1   portainer/portainer-ce:latest   "/portainer"   portainer   35 seconds ago   Up 32 seconds
+```
+* Элемент списка 3
 </details>
