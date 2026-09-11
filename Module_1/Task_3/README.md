@@ -38,17 +38,12 @@ nginx:1.29.0   3ab4ed065a14        282MB         75.4MB
 ```
 docker inspect nginx:1.29.0
 ```
-* Убедился что скачал образ из официального репозитория полагаясь на вывод команды inspect
+* Убедился что скачал образ из официального репозитория
 ```
-"Identity": {
-            "Pull": [
-                {
-                    "Repository": "docker.io/library/nginx"
-                }
-            ]
-        }
+Зашел на Docker Hub официальный репозиторий Nginx выбрал Tag 1.29.0 и увидел ключ подписи, сравнил его с ключом в выводе команды Inspect
+https://hub.docker.com/layers/library/nginx/1.29.0/images/sha256-0a8937a3b135265c379ac515e408fc88baa8f86d871ca80a83e059f5d7cec36a
+```
 
-```
 
 
 </details>
