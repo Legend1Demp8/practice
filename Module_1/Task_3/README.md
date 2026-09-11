@@ -36,7 +36,7 @@ nginx:1.29.0   3ab4ed065a14        282MB         75.4MB
 ```
 * Посмотрел подробную информацию о об образе
 ```
-docker inspect nginx:1.29.0
+~# docker inspect nginx:1.29.0
 ```
 * Убедился что скачал образ из официального репозитория
 ```
@@ -45,18 +45,28 @@ https://hub.docker.com/layers/library/nginx/1.29.0/images/sha256-0a8937a3b135265
 ```
 * Убедился что в системе не подключены никакие левые зеркала для скачки образов
 ```
-docker info
+~# docker info
 Не показывает строку Registry Mirrors
 ```
 * Создал левое зеркало в файле /etc/docker/daemon.json 
 ```
 Добавил следующий формат {"registry-mirrors": ["https://fontanka.ru"]}
 Убедился что в Docker для применения изменений необходим перезапуск , поскольку docker info не отобразил новое зеркало
-Выполнил перезагрузку Docker Server systemctl restart docker
+Выполнил перезагрузку Docker Server: 
+~# systemctl restart docker
 Убедился что теперь появилась новая графа в выводе docker info Registry Mirrors: https://fontanka.ru/
 Откатил изменения, тест завершил
 ```
-
+* Запустил загруженный образ nginx:1.29.0
+```
+~# docker run -d nginx:1.29.0
+```
+* Убедился в том что запуск успешен
+```
+~# docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS     NAMES
+1ff0bed9f9c3   nginx:1.29.0   "/docker-entrypoint.…"   9 seconds ago   Up 8 seconds   80/tcp    compassionate_saha
+```
 
 </details>
 
