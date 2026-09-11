@@ -48,6 +48,14 @@ https://hub.docker.com/layers/library/nginx/1.29.0/images/sha256-0a8937a3b135265
 docker info
 Не показывает строку Registry Mirrors
 ```
+* Создал левое зеркало в файле /etc/docker/daemon.json 
+```
+Добавил следующий формат {"registry-mirrors": ["https://fontanka.ru"]}
+Убедился что в Docker для применения изменений необходим перезапуск , поскольку docker info не отобразил новое зеркало
+Выполнил перезагрузку Docker Server systemctl restart docker
+Убедился что теперь появилась новая графа в выводе docker info Registry Mirrors: https://fontanka.ru/
+Откатил изменения, тест завершил
+```
 
 
 </details>
