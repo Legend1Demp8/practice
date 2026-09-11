@@ -327,18 +327,9 @@ curl: (56) Recv failure: Connection reset by peer
 <img width="991" height="407" alt="image" src="https://github.com/user-attachments/assets/c83ceb75-4d44-49bc-8ff2-96a8a5b0030b" />
 Создание файла в контейнере Centos а также в основной системе и отображение каталога /data в контейнере debian
 <img width="722" height="560" alt="image" src="https://github.com/user-attachments/assets/6fa89d3f-eee8-449a-9b30-136713674263" />
+
 Создаю tag для образа из прошлых заданий и отправляю в свой локальный registry, просматриваю то что загружено в registry с помощью curl
 <img width="1189" height="309" alt="image" src="https://github.com/user-attachments/assets/0b48cb08-1799-491c-a93c-a14b6d42eecf" />
-Захожу куда просят http://127.0.0.1:9000/#!/3/docker/stacks
-<img width="1603" height="293" alt="image" src="https://github.com/user-attachments/assets/bffd01ec-bd55-41e6-9539-26d8037ea40d" />
-Делаю то что просят
-<img width="1574" height="602" alt="image" src="https://github.com/user-attachments/assets/16f848ba-dd87-4402-8ba6-db77cb430383" />
-Делаю то что просят
-<img width="1606" height="384" alt="image" src="https://github.com/user-attachments/assets/140f1285-7709-4cb3-9d5c-7f68a991ad0e" />
-Делаю то что просят
-<img width="1198" height="686" alt="image" src="https://github.com/user-attachments/assets/0dbd1ab1-35f9-4cbd-b21e-9a6fa4b9b261" />
-Делаю то что просят
-<img width="662" height="843" alt="image" src="https://github.com/user-attachments/assets/462be22d-3644-42d9-9ce8-016110f243b1" />
 
 
 ### Шаги выполнения:
@@ -410,6 +401,16 @@ drwxrwxr-x 2 1000 1000 4.0K Sep 11 13:58 my-nginx-project
 <img width="1035" height="607" alt="image" src="https://github.com/user-attachments/assets/7f9e58fb-eefe-453b-86c0-e49eef6bec37" />
 Нужен второй токен, первый устарел с прошлого запуска
 <img width="987" height="53" alt="image" src="https://github.com/user-attachments/assets/cc26b1e8-a5b2-4102-9872-69c37ee94efd" />
+Захожу куда просят http://127.0.0.1:9000/#!/3/docker/stacks
+<img width="1603" height="293" alt="image" src="https://github.com/user-attachments/assets/bffd01ec-bd55-41e6-9539-26d8037ea40d" />
+Делаю то что просят
+<img width="1574" height="602" alt="image" src="https://github.com/user-attachments/assets/16f848ba-dd87-4402-8ba6-db77cb430383" />
+Делаю то что просят
+<img width="1606" height="384" alt="image" src="https://github.com/user-attachments/assets/140f1285-7709-4cb3-9d5c-7f68a991ad0e" />
+Делаю то что просят
+<img width="1198" height="686" alt="image" src="https://github.com/user-attachments/assets/0dbd1ab1-35f9-4cbd-b21e-9a6fa4b9b261" />
+Делаю то что просят
+<img width="662" height="843" alt="image" src="https://github.com/user-attachments/assets/462be22d-3644-42d9-9ce8-016110f243b1" />
 Финальное задание. Я удалил файл compose.yaml и перезапустил проект , пришло уведомление от Docker Compose, что он обнаружил контейнеры Сироты.
 В проекте task-5 по факту запущено 2 контейнера а новый перезапуск показывает что запустить нужно всего один
 Для Compose источник правды всегда файл .yaml поэтому он мне предложил удалить контейнер сироту
