@@ -126,6 +126,31 @@ Commercial support is available at
 ```
 * Выполнил перезагрузку виртуальной машины чтобы убедится, что изменения не фиксируются
 * Новая загрузка показала, что изменения никак не зафиксировались и то что изменять файлы внутри контейнера руками это не выход
+* Понял что необходимо создать свой образ (image) 
+* Создал папку проекта а в нём создал файл Dockerimage а также необходимый файл index.html
+```
+~# mkdir my-nginx-project && cd my-nginx-project
+```
+```
+~# vim Dockerfile
+FROM nginx:1.29.0
+COPY index.html /usr/share/nginx/html/index.html
+```
+```
+~# vim index.html
+<html>
+   <head>
+      Hey, Netology
+   </head>
+   <body>
+      <h1>I will be DevOps Engineer!</h1>
+   </body>
+</html>
+```
+* Выполнил сборку образа 
+```
+~# docker build -t my-nginx:1.0.0 .
+```
 
 </details>
 
