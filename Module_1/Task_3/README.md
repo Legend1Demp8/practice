@@ -437,4 +437,10 @@ task5-registry-1    registry:2                      "/entrypoint.sh /etc…"   r
 127.0.0.1:5000/custom-nginx:latest   2332bee6f9ff        279MB         72.2MB
 docker-hub-login/custom-nginx:1.0.0      2332bee6f9ff        279MB         72.2MB
 ```
+* Загружаю образ в свой локальный Registry, проверяю загрузку
+```
+~# docker push 127.0.0.1:5000/custom-nginx:latest
+~# curl -s http://localhost:5000/v2/_catalog
+{"repositories":["custom-nginx"]}
+```
 </details>
