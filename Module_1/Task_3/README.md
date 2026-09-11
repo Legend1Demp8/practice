@@ -221,8 +221,8 @@ CONTAINER ID   IMAGE                             COMMAND                  CREATE
 ```
 * Выполнил команду 
 ```
-~# <img width="1637" height="505" alt="2" src="https://github.com/user-attachments/assets/c9dfaa3f-986f-41ed-960d-defb8bf78922" />
-date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html
+<img width="1637" height="505" alt="2" src="https://github.com/user-attachments/assets/c9dfaa3f-986f-41ed-960d-defb8bf78922" />
+~# date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html
 ```
 
 </details>
@@ -232,9 +232,12 @@ date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:
 ### Шаги выполнения:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
-  
-  * Элемент списка 1
-  * Элемент списка 2
+
+* Подключаюсь к вводу выводу необходимого контейнера
+```
+docker attach custom-nginx-t2
+```
+* Элемент списка 2
   * Элемент списка 3
 </details>
 
