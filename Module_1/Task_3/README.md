@@ -221,7 +221,6 @@ CONTAINER ID   IMAGE                             COMMAND                  CREATE
 ```
 * Выполнил команду 
 ```
-<img width="1637" height="505" alt="2" src="https://github.com/user-attachments/assets/c9dfaa3f-986f-41ed-960d-defb8bf78922" />
 ~# date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html
 ```
 
@@ -229,6 +228,8 @@ CONTAINER ID   IMAGE                             COMMAND                  CREATE
 
 ## Задача 3
 ### Результат:
+<img width="1324" height="247" alt="image" src="https://github.com/user-attachments/assets/e29fe83c-a5eb-44c4-93f7-6ca5806e757c" />
+
 ### Шаги выполнения:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
@@ -237,8 +238,22 @@ CONTAINER ID   IMAGE                             COMMAND                  CREATE
 ```
 docker attach custom-nginx-t2
 ```
-* Элемент списка 2
-  * Элемент списка 3
+* Передаю в процесс сигнал SIGINT нажатием клавиши Ctrl+C
+```
+^C
+2026/09/11 19:27:19 [notice] 1#1: signal 2 (SIGINT) received, exiting
+```
+* Процесс ожидаемо останавливает свою работу по нашей просьбе
+* Запускаю контейнер обратно и подключаюсь запуская bash
+```
+~# docker start custom-nginx-t2
+~# docker exec -it custom-nginx-t2 bash
+```
+* Выполняю установку текстового редактора vim
+```
+~# apt-get update
+~# apt-get install -y vim
+```
 </details>
 
 ## Задача 4
