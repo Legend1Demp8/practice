@@ -392,6 +392,14 @@ drwxrwxr-x 2 1000 1000 4.0K Sep 11 13:58 my-nginx-project
 <img width="1257" height="290" alt="image" src="https://github.com/user-attachments/assets/8b2168b3-f9b8-49b2-af6f-58183ab007da" />
 Делаю в основном файле compose.yaml include docker-compose.yaml и запускаю после проверяю статус запуска
 <img width="1339" height="290" alt="image" src="https://github.com/user-attachments/assets/8d731727-f3dc-4053-aa63-4ff6c6667cb6" />
+Не успел за 5 минут попасть в Portainer поэтому после проброса порта через ssh на порт 9000 не смог попасть
+Выполнил перезапуск контейнера
+<img width="1402" height="216" alt="image" src="https://github.com/user-attachments/assets/c0d1fb76-3552-4bd6-aba7-c21bcf084437" />
+Далее зашел на вебморду по http://127.0.0.1:9000 задал пароль и нашел токен
+<img width="1035" height="607" alt="image" src="https://github.com/user-attachments/assets/7f9e58fb-eefe-453b-86c0-e49eef6bec37" />
+Нужен второй токен, первый устарел с прошлого запуска
+<img width="987" height="53" alt="image" src="https://github.com/user-attachments/assets/cc26b1e8-a5b2-4102-9872-69c37ee94efd" />
+
 
 ### Шаги выполнения:
 <details>
@@ -442,5 +450,33 @@ docker-hub-login/custom-nginx:1.0.0      2332bee6f9ff        279MB         72.2M
 ~# docker push 127.0.0.1:5000/custom-nginx:latest
 ~# curl -s http://localhost:5000/v2/_catalog
 {"repositories":["custom-nginx"]}
+```
+* Перезапустил Compose
+```
+~# docker compose ls
+NAME                STATUS              CONFIG FILES
+task5               running(2)          /tmp/netology/docker/task5/compose.yaml
+
+~#  docker compose restart portainer
+WARN[0000] Found multiple config files with supported names: /tmp/netology/docker/task5/compose.yaml, /tmp/netology/docker/task5/docker-compose.yaml
+WARN[0000] Using /tmp/netology/docker/task5/compose.yaml
+WARN[0000] /tmp/netology/docker/task5/docker-compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+WARN[0000] /tmp/netology/docker/task5/compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+[+] restart 0/1
+ ⠹ Container task5-portainer-1 Restarting                                                                                                                                                               0.2s
+ 
+~# docker ps
+CONTAINER ID   IMAGE                           COMMAND                  CREATED          STATUS              PORTS                                         NAMES
+be5403098327   registry:2                      "/entrypoint.sh /etc…"   45 minutes ago   Up 45 minutes       0.0.0.0:5000->5000/tcp, [::]:5000->5000/tcp   task5-registry-1
+90c99d5e93ba   portainer/portainer-ce:latest   "/portainer"             56 minutes ago   Up About a minute                                                 task5-portainer-1
+```
+* Пробросил порт 9000 через ssh
+```
+ssh -L 9000:localhost:9000 ubuntu@8.8.8.8 
+```
+* Зашел в web морду и настроил учетную запись
+* Нашел setup_токен
+```
+~# docker logs task5-portainer-1 2>&1 | grep setup_token
 ```
 </details>
