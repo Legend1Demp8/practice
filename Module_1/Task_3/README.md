@@ -328,10 +328,6 @@ curl: (56) Recv failure: Connection reset by peer
 Создание файла в контейнере Centos а также в основной системе и отображение каталога /data в контейнере debian
 <img width="722" height="560" alt="image" src="https://github.com/user-attachments/assets/6fa89d3f-eee8-449a-9b30-136713674263" />
 
-Создаю tag для образа из прошлых заданий и отправляю в свой локальный registry, просматриваю то что загружено в registry с помощью curl
-<img width="1189" height="309" alt="image" src="https://github.com/user-attachments/assets/0b48cb08-1799-491c-a93c-a14b6d42eecf" />
-
-
 ### Шаги выполнения:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
@@ -394,6 +390,8 @@ drwxrwxr-x 2 1000 1000 4.0K Sep 11 13:58 my-nginx-project
 <img width="1257" height="290" alt="image" src="https://github.com/user-attachments/assets/8b2168b3-f9b8-49b2-af6f-58183ab007da" />
 Делаю в основном файле compose.yaml include docker-compose.yaml и запускаю после проверяю статус запуска
 <img width="1339" height="290" alt="image" src="https://github.com/user-attachments/assets/8d731727-f3dc-4053-aa63-4ff6c6667cb6" />
+Создаю tag для образа из прошлых заданий и отправляю в свой локальный registry, просматриваю то что загружено в registry с помощью curl
+<img width="1189" height="309" alt="image" src="https://github.com/user-attachments/assets/0b48cb08-1799-491c-a93c-a14b6d42eecf" />
 Не успел за 5 минут попасть в Portainer поэтому после проброса порта через ssh на порт 9000 не смог попасть
 Выполнил перезапуск контейнера
 <img width="1402" height="216" alt="image" src="https://github.com/user-attachments/assets/c0d1fb76-3552-4bd6-aba7-c21bcf084437" />
