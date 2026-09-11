@@ -106,6 +106,26 @@ Commercial support is available at
 </body>
 </html>
 ```
+* Провалился в запущенный контейнер чтобы найти конфиг который необходимо изменить
+```
+~# docker exec -it compassionate_saha bash
+```
+* Нашел сам файл Nginx .conf и расположение файла index.html для стартовой страницы
+```
+/etc/nginx/conf.d/default.conf
+/usr/share/nginx/html/index.html
+```
+* Поменял файл /usr/share/nginx/html/index.html самым простым способом
+```
+~# echo "<h1>Test NGINX</h1>" >> /usr/share/nginx/html/index.html
+```
+* Убедился что изменения применились
+```
+~# curl http://172.17.0.2:80
+<h1>Test NGINX</h1>
+```
+* Выполнил перезагрузку виртуальной машины чтобы убедится, что изменения не фиксируются
+* Новая загрузка показала, что изменения никак не зафиксировались и то что изменять файлы внутри контейнера руками это не выход
 
 </details>
 
