@@ -294,7 +294,6 @@ LISTEN 0      4096            [::]:8080         [::]:*    users:(("docker-proxy"
 ~# curl http://127.0.0.1:8080
 curl: (56) Recv failure: Connection reset by peer
 ```
-</details>
 * Останавливаю контейнер и сам докер демон
 ```
 ~# docker stop custom-nginx-t2
@@ -310,6 +309,7 @@ curl: (56) Recv failure: Connection reset by peer
 ~# systemctl start docker
 ~# docker start custom-nginx-t2
 ```
+</details>
 
 ## Задача 4
 ### Результат:
