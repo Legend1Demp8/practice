@@ -147,9 +147,26 @@ COPY index.html /usr/share/nginx/html/index.html
    </body>
 </html>
 ```
-* Выполнил сборку образа 
+* Выполнил сборку образа с указанием тега из задания 1.0.0
 ```
 ~# docker build -t my-nginx:1.0.0 .
+```
+* Запустил свой образ и проверил вывод, все как нужно!
+* Залогинился на Docker Hub
+```
+docker login
+```
+* Добавил новый tag своему образу по требованию Docker Hub по загрузке образа
+```
+~# docker tag my-nginx:1.0.0 docker-hub-login/my-nginx:1.0.0
+```
+* Снял старый Tag с образа
+```
+~# docker rmi my-nginx:1.0.0
+```
+* Выполнил отправку образа в свой Docker Hub
+```
+~# docker push docker-hub-login/my-nginx:1.0.0
 ```
 
 </details>
