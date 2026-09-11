@@ -229,7 +229,10 @@ CONTAINER ID   IMAGE                             COMMAND                  CREATE
 ## Задача 3
 ### Результат:
 <img width="1324" height="247" alt="image" src="https://github.com/user-attachments/assets/e29fe83c-a5eb-44c4-93f7-6ca5806e757c" />
+
 <img width="783" height="350" alt="image" src="https://github.com/user-attachments/assets/5263b1a3-faf1-410a-856e-d06fe9b58b60" />
+Переназначаю порт контейнера с 80 на 81, а также проброс портов с 8080->80 на 8080->81 не удаляя контейнер
+<img width="1341" height="438" alt="image" src="https://github.com/user-attachments/assets/b42197e5-3dea-46c7-a960-1bd79bcd7b06" />
 
 ### Шаги выполнения:
 <details>
@@ -289,6 +292,21 @@ LISTEN 0      4096            [::]:8080         [::]:*    users:(("docker-proxy"
 curl: (56) Recv failure: Connection reset by peer
 ```
 </details>
+* Останавливаю контейнер и сам докер демон
+```
+~# docker stop custom-nginx-t2
+~# systemctl stop docker
+```
+* Редактирую конфигурационные файлы контейнера
+```
+~# vim /var/lib/docker/containers/b6831b666a5e3a68df9264dbdfc6d44ce64ace5425956da9e02dca1252454940/hostconfig.json
+~# vim /var/lib/docker/containers/b6831b666a5e3a68df9264dbdfc6d44ce64ace5425956da9e02dca1252454940/config.v2.json
+```
+* Запускаю докер демон, а также сам контейнер
+```
+~# systemctl start docker
+~# docker start custom-nginx-t2
+```
 
 ## Задача 4
 ### Результат:
