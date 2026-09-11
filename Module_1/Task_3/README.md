@@ -67,6 +67,13 @@ https://hub.docker.com/layers/library/nginx/1.29.0/images/sha256-0a8937a3b135265
 CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS     NAMES
 1ff0bed9f9c3   nginx:1.29.0   "/docker-entrypoint.…"   9 seconds ago   Up 8 seconds   80/tcp    compassionate_saha
 ```
+* Понял, что 80 порт работает только внутри контейнера и я не могу обратится к Nginx
+```
+~# curl 127.0.0.1:80
+curl: (7) Failed to connect to 127.0.0.1 port 80 after 0 ms: Could not connect to server
+
+ss -lntup так же не показывает, что порт 80 слушается
+```
 
 </details>
 
