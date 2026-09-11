@@ -327,6 +327,8 @@ curl: (56) Recv failure: Connection reset by peer
 <img width="991" height="407" alt="image" src="https://github.com/user-attachments/assets/c83ceb75-4d44-49bc-8ff2-96a8a5b0030b" />
 Создание файла в контейнере Centos а также в основной системе и отображение каталога /data в контейнере debian
 <img width="722" height="560" alt="image" src="https://github.com/user-attachments/assets/6fa89d3f-eee8-449a-9b30-136713674263" />
+Создаю tag для образа из прошлых заданий и отправляю в свой локальный registry, просматриваю то что загружено в registry с помощью curl
+<img width="1189" height="309" alt="image" src="https://github.com/user-attachments/assets/0b48cb08-1799-491c-a93c-a14b6d42eecf" />
 
 ### Шаги выполнения:
 <details>
@@ -427,5 +429,12 @@ WARN[0000] /tmp/netology/docker/task5/compose.yaml: the attribute `version` is o
 NAME                IMAGE                           COMMAND                  SERVICE     CREATED          STATUS          PORTS
 task5-portainer-1   portainer/portainer-ce:latest   "/portainer"             portainer   14 minutes ago   Up 14 minutes
 task5-registry-1    registry:2                      "/entrypoint.sh /etc…"   registry    3 minutes ago    Up 3 minutes    0.0.0.0:5000->5000/tcp, [::]:5000->5000/tcp
+```
+* Создаю тег на старый образ из заданий и проверяю что он создан
+```
+~# docker tag legend1demp9/custom-nginx:1.0.0 127.0.0.1:5000/custom-nginx:latest
+~# docker images | grep custom-nginx
+127.0.0.1:5000/custom-nginx:latest   2332bee6f9ff        279MB         72.2MB
+docker-hub-login/custom-nginx:1.0.0      2332bee6f9ff        279MB         72.2MB
 ```
 </details>
