@@ -34,7 +34,29 @@ WORKDIR /app
 COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
+* Сделал multistage но вес не изменился. Базовый образ одинаков
+```
+FROM python:3.12-slim AS builder
+
+#  Ваш код здесь #
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+FROM python:3.12-slim
+WORKDIR /app
+COPY --from=builder /usr/local /usr/local
+COPY . .
+
 # Запускаем приложение с помощью uvicorn, делая его доступным по сети
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
+```
+
+# Запускаем приложение с помощью uvicorn, делая его доступным по сети
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
+```
+```
+my-python-app-multi:latest           159acc985c09        400MB           95MB    U
+my-python-app:latest                 f4e66c309f74        400MB           95MB    U
 ```
 </details>
