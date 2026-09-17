@@ -23,6 +23,7 @@ proxy.yaml
 .env
 .git/
 .gitignore
+venv
 ```
 * Согласно заданию изменил файл Dockerfile.python для успешного запуска приложения
 ```
