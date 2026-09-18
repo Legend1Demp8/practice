@@ -355,16 +355,7 @@ mysqldump: Got error: 1045: "Plugin caching_sha2_password could not be loaded: E
 
 ## Задача 6
 ### Результат:
-Ставим dive как контейнер и пихаем туда образ
-```
-docker run --rm -it \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  docker.io/wagoodman/dive:latest hashicorp/terraform:latest
-```
-Как я понял я прямо тут мог бы извлечь через крышечкаЕ только надо было по подмонтировать, ну ладно идём в docker save
-<img width="1640" height="891" alt="image" src="https://github.com/user-attachments/assets/ff628d9f-8365-4ee2-810c-86d0566d63cf" />
-
-Достал терраформ вот скрин 
+* Извлекаем через docker save
 <img width="912" height="86" alt="image" src="https://github.com/user-attachments/assets/c10ab92b-0881-4f93-b5a6-c08a29f68118" />
 
 Шаги вот
@@ -378,4 +369,13 @@ docker run --rm -it \
 8) ``` chmod +x ./extracted/bin/terraform ```
 9) ``` ./extracted/bin/terraform version ```
 
+* Извлекаем через Dive
+Честно не получилось Ctr+E не работает
+<img width="1637" height="937" alt="image" src="https://github.com/user-attachments/assets/f15a80f0-2e5b-4d7f-b003-01d7d6de942e" />
+```
+docker run --rm -it \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v "$(pwd)/extracted-dive":/tmp \
+  docker.io/wagoodman/dive:latest hashicorp/terraform:latest
+```
 
