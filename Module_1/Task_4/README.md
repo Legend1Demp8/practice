@@ -364,5 +364,18 @@ docker run --rm -it \
 Как я понял я прямо тут мог бы извлечь через крышечкаЕ только надо было по подмонтировать, ну ладно идём в docker save
 <img width="1640" height="891" alt="image" src="https://github.com/user-attachments/assets/ff628d9f-8365-4ee2-810c-86d0566d63cf" />
 
+Достал терраформ вот скрин 
+<img width="912" height="86" alt="image" src="https://github.com/user-attachments/assets/c10ab92b-0881-4f93-b5a6-c08a29f68118" />
+
+Шаги вот
+1) ``` docker save hashicorp/terraform:latest -o terraform_image.tar ```
+2) ``` mkdir terraform_layers ```
+3) ``` tar -xf terraform_image.tar -C terraform_layers  ```
+4) ``` cd terraform_layers ```
+5) ``` for f in ./blobs/sha256/*; do tar -tf "$f" 2>/dev/null | grep -qE '(^|/)bin/terraform$' && echo "НАЙДЕН: $f"; done ```
+6) ``` extracted ```
+7) ``` tar -xf ./blobs/sha256/2213d3f768a98affdbc62b57e382cf20ba446135efda646d18dc6a780bfedd82 -C ./extracted bin/terraform ```
+8) ``` chmod +x ./extracted/bin/terraform ```
+9) ``` ./extracted/bin/terraform version ```
 
 
