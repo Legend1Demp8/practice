@@ -306,4 +306,9 @@ shvirtd-example-python-ingress-proxy-1   nginx:latest                 "/docker-e
 shvirtd-example-python-reverse-proxy-1   haproxy:2.4                  "docker-entrypoint.s…"   reverse-proxy   47 seconds ago   Up 45 seconds   127.0.0.1:8080->8080/tcp
 shvirtd-example-python-web-1             shvirtd-example-python-web   "uvicorn main:app --…"   web             46 seconds ago   Up 45 seconds
 ```
+* Проверяю работу локально
+```
+curl -L http://127.0.0.1:8090
+"TIME: 2026-09-18 13:25:11, IP: 127.0.0.1"
+```
 </details>
