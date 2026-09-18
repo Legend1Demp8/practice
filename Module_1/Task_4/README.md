@@ -7,7 +7,7 @@
 Вот коммит с изменениями кода: [https://github.com/Legend1Demp8/shvirtd-example-python/commit/0ec648e75c5c329ee3c0f0024d4b9e12723a5931](https://github.com/Legend1Demp8/shvirtd-example-python/commit/0ec648e75c5c329ee3c0f0024d4b9e12723a5931)
 ### Результат Запуск через venv
 <img width="1146" height="144" alt="image" src="https://github.com/user-attachments/assets/6dc88195-ac7a-4819-ab0f-5d29ad361020" />
-<img width="1123" height="105" alt="image" src="https://github.com/user-attachments/assets/4ed87d91-7238-4fd8-956f-34f3f21356dd" />
+<img width="1123" height="105" alt="image" src="https://github.com/user-attachments/assets/4ed87d91-7238-4fd8-956f-34f3f21356dd" /> \
 ### Результат "Динамическое название и использование таблицы"
 Пришлось покопаться в ручную, автозамена не подходит, например в SQL запросах или print, нужны f строки \
 Вот коммит с изменениями кода: [https://github.com/Legend1Demp8/shvirtd-example-python/commit/b379febae207961101380d76d96ad56c93715521](https://github.com/Legend1Demp8/shvirtd-example-python/commit/b379febae207961101380d76d96ad56c93715521)
