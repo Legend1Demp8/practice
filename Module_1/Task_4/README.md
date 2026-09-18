@@ -353,4 +353,16 @@ mysqldump: Got error: 1045: "Plugin caching_sha2_password could not be loaded: E
 
 </details>
 
+## Задача 6
+### Результат:
+Ставим dive как контейнер и пихаем туда образ
+```
+docker run --rm -it \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  docker.io/wagoodman/dive:latest hashicorp/terraform:latest
+```
+Как я понял я прямо тут мог бы извлечь через крышечкаЕ только надо было по подмонтировать, ну ладно идём в docker save
+<img width="1640" height="891" alt="image" src="https://github.com/user-attachments/assets/ff628d9f-8365-4ee2-810c-86d0566d63cf" />
+
+
 
