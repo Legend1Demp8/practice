@@ -1,14 +1,14 @@
 ## Задача 1
-### Результат Dockerfile.python
+### Результат: Dockerfile.python
 <img width="559" height="216" alt="image" src="https://github.com/user-attachments/assets/d80030c3-7981-4ee1-add6-4f4248f683b3" /> \
 Вот коммит с добавлением файла: [https://github.com/Legend1Demp8/shvirtd-example-python/commit/8cb62cb2243e519d3669c05e79e601fc8b9aadf5](https://github.com/Legend1Demp8/shvirtd-example-python/commit/8cb62cb2243e519d3669c05e79e601fc8b9aadf5)
-### Результат .dockerignore
+### Результат: .dockerignore
 <img width="344" height="287" alt="image" src="https://github.com/user-attachments/assets/b6e222b4-24ea-405f-aaa2-28a0828d35cb" /> \
 Вот коммит с изменениями кода: [https://github.com/Legend1Demp8/shvirtd-example-python/commit/0ec648e75c5c329ee3c0f0024d4b9e12723a5931](https://github.com/Legend1Demp8/shvirtd-example-python/commit/0ec648e75c5c329ee3c0f0024d4b9e12723a5931)
-### Результат Запуск через venv
+### Результат: Запуск через venv
 <img width="1146" height="144" alt="image" src="https://github.com/user-attachments/assets/6dc88195-ac7a-4819-ab0f-5d29ad361020" />
-<img width="1123" height="105" alt="image" src="https://github.com/user-attachments/assets/4ed87d91-7238-4fd8-956f-34f3f21356dd" /> \
-### Результат "Динамическое название и использование таблицы"
+<img width="1123" height="105" alt="image" src="https://github.com/user-attachments/assets/4ed87d91-7238-4fd8-956f-34f3f21356dd" /> 
+### Результат: Динамическое название и использование таблицы
 Пришлось покопаться в ручную, автозамена не подходит, например в SQL запросах или print, нужны f строки \
 Вот коммит с изменениями кода: [https://github.com/Legend1Demp8/shvirtd-example-python/commit/b379febae207961101380d76d96ad56c93715521](https://github.com/Legend1Demp8/shvirtd-example-python/commit/b379febae207961101380d76d96ad56c93715521)
 <img width="1156" height="249" alt="image" src="https://github.com/user-attachments/assets/d098f46c-8bf7-4217-b3cd-9bbdea59e109" />
