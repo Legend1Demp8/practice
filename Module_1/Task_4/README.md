@@ -21,8 +21,6 @@
 curl http://127.0.0.1:5000/requests
 ```
 
-
-
 ### Самостоятельное задание по MySQL
 <details>
   <summary>Нажмите, чтобы открыть</summary>
@@ -144,4 +142,45 @@ task-4-python-single:latest   3993aa1a9b19        490MB          139MB
 task-4-python-multi:latest    1266390cb5e4        400MB           95MB
 task-4-python-single:latest   18f051c37e53        400MB           95MB
 ```
+</details>
+
+## Задание 2
+### Результат:
+<img width="1575" height="206" alt="image" src="https://github.com/user-attachments/assets/c6b6ad90-6a1e-4cf0-b5a3-54a53e953a19" />
+
+### Шаги выполнения:
+<details>
+  <summary>Нажмите, чтобы открыть</summary>
+  
+* Дал своей сервисной учетной записи права на создание и управление Registry | container-registry.editor
+* Создал Registry
+```
+yc container registry create --name my-first-registry
+done (1s)
+id: crp2h22vhc22kag2filt
+folder_id: b2gef2heh2kn22cp22mu
+name: my-first-registry
+status: ACTIVE
+created_at: "2026-09-18T11:24:07.237Z"
+```
+* Подключил Registry к Docker
+```
+yc container registry configure-docker
+docker configured to use yc --profile "admin-vm" for authenticating "cr.yandex" container registries
+Credential helper is configured in '/root/.docker/config.json'
+```
+* Тегирую свой образ 
+```
+docker tag task-4-python-multi:latest cr.yandex/crp2h22vhc22kag2filt/task-4-python-multi:latest
+```
+* Делаю Push в Yandex
+```
+docker push cr.yandex/crp2h22vhc22kag2filt/task-4-python-multi:latest
+```
+* Проверяю наличие всего в веб интерфейсе
+<img width="1128" height="196" alt="image" src="https://github.com/user-attachments/assets/32b64a17-76df-4ec5-936e-a360a734aacd" />
+<img width="1559" height="208" alt="image" src="https://github.com/user-attachments/assets/c25c7bfb-451f-46c9-b03f-ab1ebd5f7c92" />
+* Проверяю уязвимости
+<img width="1575" height="206" alt="image" src="https://github.com/user-attachments/assets/bff86c85-424e-488b-9158-ba45a565348d" />
+
 </details>
