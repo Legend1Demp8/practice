@@ -1,5 +1,11 @@
 ## Задача 1
 ### Результат: [https://github.com/Legend1Demp8/shvirtd-example-python](https://github.com/Legend1Demp8/shvirtd-example-python)
+Дополнительное задание venv
+<img width="1146" height="144" alt="image" src="https://github.com/user-attachments/assets/6dc88195-ac7a-4819-ab0f-5d29ad361020" />
+<img width="1123" height="105" alt="image" src="https://github.com/user-attachments/assets/4ed87d91-7238-4fd8-956f-34f3f21356dd" />
+
+
+
 ### Самостоятельное задание по MySQL
 <details>
   <summary>Нажмите, чтобы открыть</summary>
