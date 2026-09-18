@@ -257,5 +257,53 @@ server web 172.20.0.5:5000 check
 <details>
   <summary>Нажмите, чтобы открыть</summary>
 
-* тест
+* Пишу Dockerfile.mysql
+* Пишу Файл compose.yaml исходя из условий задания
+```
+include:
+  - proxy.yaml
+
+services:
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.mysql
+    restart: always
+    networks:
+      backend:
+        ipv4_address: 172.20.0.10
+    environment:
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    restart: always
+    depends_on:
+      - db
+    networks:
+      backend:
+        ipv4_address: 172.20.0.5
+    environment:
+      - DB_NAME=${MYSQL_DATABASE}
+      - DB_USER=${MYSQL_USER}
+      - DB_PASSWORD=${MYSQL_PASSWORD}
+      - DB_HOST=db # 172.20.0.10
+      - DB_TABLE_NAME=${MYSQL_TABLE_NAME}
+```
+* Запускаю проект
+```
+docker compose up --build -d
+```
+```
+docker compose ps
+NAME                                     IMAGE                        COMMAND                  SERVICE         CREATED          STATUS          PORTS
+shvirtd-example-python-db-1              shvirtd-example-python-db    "docker-entrypoint.s…"   db              47 seconds ago   Up 45 seconds   3306/tcp, 33060/tcp
+shvirtd-example-python-ingress-proxy-1   nginx:latest                 "/docker-entrypoint.…"   ingress-proxy   47 seconds ago   Up 46 seconds
+shvirtd-example-python-reverse-proxy-1   haproxy:2.4                  "docker-entrypoint.s…"   reverse-proxy   47 seconds ago   Up 45 seconds   127.0.0.1:8080->8080/tcp
+shvirtd-example-python-web-1             shvirtd-example-python-web   "uvicorn main:app --…"   web             46 seconds ago   Up 45 seconds
+```
 </details>
