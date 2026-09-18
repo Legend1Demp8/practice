@@ -3,8 +3,8 @@
 Дополнительное задание "Запуск через venv"
 <img width="1146" height="144" alt="image" src="https://github.com/user-attachments/assets/6dc88195-ac7a-4819-ab0f-5d29ad361020" />
 <img width="1123" height="105" alt="image" src="https://github.com/user-attachments/assets/4ed87d91-7238-4fd8-956f-34f3f21356dd" />
-Дополнительное задание "Динамическое название и использование таблицы"
-Пришлось покопаться в ручную, в тупую автозамена не подходит, например в SQL запросах или print, нужны f строки
+Дополнительное задание "Динамическое название и использование таблицы" \
+Пришлось покопаться в ручную, в тупую автозамена не подходит, например в SQL запросах или print, нужны f строки \
 Вот коммит с изменениями кода:
 <img width="1156" height="249" alt="image" src="https://github.com/user-attachments/assets/d098f46c-8bf7-4217-b3cd-9bbdea59e109" />
 <img width="1128" height="122" alt="image" src="https://github.com/user-attachments/assets/e026aab3-ba29-4909-bb47-2d65f841dae5" />
