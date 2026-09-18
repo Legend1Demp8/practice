@@ -339,16 +339,16 @@ mysqldump: Got error: 1045: "Plugin caching_sha2_password could not be loaded: E
 ```
 Он собран последний раз 3года назад, не хочу менять шифрование пароля в БД на более низкое сделаю просто через другой образ 
 
-Зафиксировал имя сети в файле proxy.yaml чтобы не заниматься парсингом из-за ерунды
+Зафиксировал имя сети в файле proxy.yaml чтобы не заниматься парсингом из-за ерунды \
 <img width="606" height="438" alt="image" src="https://github.com/user-attachments/assets/fd1300c0-1289-4604-9908-64408f9e7a32" />
 
-Создал самый простой файл backup.sh
+Создал самый простой файл backup.sh \
 <img width="937" height="377" alt="image" src="https://github.com/user-attachments/assets/d0ff3b3e-6bfb-4ed7-a5b0-4403fd847887" />
 
-Закронил скрипт
+Закронил скрипт \
 <img width="578" height="381" alt="image" src="https://github.com/user-attachments/assets/5898df0f-a8f3-42c0-9711-c62f8ccc940c" />
 
-Вывел в ls
+Вывел в ls \
 <img width="680" height="189" alt="image" src="https://github.com/user-attachments/assets/9028af75-4c7b-4853-aa02-0ac1f016edff" />
 
 </details>
