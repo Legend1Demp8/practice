@@ -322,8 +322,10 @@ curl -L http://127.0.0.1:8090
 ### Результат: [https://github.com/Legend1Demp8/shvirtd-example-python](https://github.com/Legend1Demp8/shvirtd-example-python)
 Самый простой и минималистичный bash скрипт, можно его улучшать по миллиону раз, на повторный запуск и тд и тп но пока не интересно да и в условиях этого нет \
 <img width="607" height="151" alt="image" src="https://github.com/user-attachments/assets/b1f90307-a40d-4074-80d8-ffcaf6cda382" />
+
 Выполняю проверку работы из разных точек \
 <img width="822" height="733" alt="image" src="https://github.com/user-attachments/assets/324133df-a33c-425f-9a31-4ad82a8faeac" />
+
 Вывожу информацию из таблицы \
 <img width="415" height="254" alt="image" src="https://github.com/user-attachments/assets/52920362-224e-448d-8798-9ee57714fc96" />
 
