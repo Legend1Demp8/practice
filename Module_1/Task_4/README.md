@@ -1,9 +1,14 @@
 ## Задача 1
-### Результат: [https://github.com/Legend1Demp8/shvirtd-example-python](https://github.com/Legend1Demp8/shvirtd-example-python)
-Дополнительное задание "Запуск через venv"
+### Результат Dockerfile
+<img width="559" height="216" alt="image" src="https://github.com/user-attachments/assets/d80030c3-7981-4ee1-add6-4f4248f683b3" />
+Вот коммит с добавлением файла: [https://github.com/Legend1Demp8/shvirtd-example-python/commit/8cb62cb2243e519d3669c05e79e601fc8b9aadf5](https://github.com/Legend1Demp8/shvirtd-example-python/commit/8cb62cb2243e519d3669c05e79e601fc8b9aadf5)
+### Результат .dockerignore
+
+Вот коммит с изменениями кода:
+### Результат Запуск через venv
 <img width="1146" height="144" alt="image" src="https://github.com/user-attachments/assets/6dc88195-ac7a-4819-ab0f-5d29ad361020" />
 <img width="1123" height="105" alt="image" src="https://github.com/user-attachments/assets/4ed87d91-7238-4fd8-956f-34f3f21356dd" />
-Дополнительное задание "Динамическое название и использование таблицы" \
+### Результат "Динамическое название и использование таблицы"
 Пришлось покопаться в ручную, в тупую автозамена не подходит, например в SQL запросах или print, нужны f строки \
 Вот коммит с изменениями кода: [https://github.com/Legend1Demp8/shvirtd-example-python/commit/b379febae207961101380d76d96ad56c93715521](https://github.com/Legend1Demp8/shvirtd-example-python/commit/b379febae207961101380d76d96ad56c93715521)
 <img width="1156" height="249" alt="image" src="https://github.com/user-attachments/assets/d098f46c-8bf7-4217-b3cd-9bbdea59e109" />
@@ -73,16 +78,24 @@ cp Dockerfile{,.python}
 * Создал файл .dockerignore
 ```
 Dockerfile*
-README.md
-LICENSE
-schema.pdf
+.dockerignore
+
 haproxy/
 nginx/
+
+.env/
+
+venv/
+__pycache__/
+
+schema.pdf
+README.md
+LICENSE
+
 proxy.yaml
-.env
-.git/
+
+.git
 .gitignore
-venv
 ```
 * SingleStage Время сборки Building 21.0s
 ```
