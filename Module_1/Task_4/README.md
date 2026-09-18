@@ -330,6 +330,22 @@ curl -L http://127.0.0.1:8090
 <img width="415" height="254" alt="image" src="https://github.com/user-attachments/assets/52920362-224e-448d-8798-9ee57714fc96" />
 
 ## Задача 5
+### Результат
 
+
+
+## Задача 5
+### Шаги выполнения:
+<details>
+  <summary>Нажмите, чтобы открыть</summary>
+
+* Зафиксировал имя сети в файле proxy.yaml чтобы не заниматься парсингом из-за ерунды
+<img width="606" height="438" alt="image" src="https://github.com/user-attachments/assets/fd1300c0-1289-4604-9908-64408f9e7a32" />
+
+* Создал самый простой файл backup.sh
+<img width="500" height="368" alt="image" src="https://github.com/user-attachments/assets/a8d38ca1-664b-42f3-b7ab-1282e639281f" />
+
+
+</details>
 
 
