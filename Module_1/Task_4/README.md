@@ -68,27 +68,30 @@ proxy.yaml
 .gitignore
 venv
 ```
-* Согласно заданию изменил файл Dockerfile.python для успешного запуска приложения
+* SingleStage
 ```
+cat Dockerfile.python-singlestage
+
 FROM python:3.12-slim
 
 #  Ваш код здесь #
 WORKDIR /app
 COPY . .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Запускаем приложение с помощью uvicorn, делая его доступным по сети
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
 ```
-
-* Сделал multistage но вес не изменился. Базовый образ одинаков
+* MultiStage
 ```
+cat Dockerfile.python-multistage
+
 FROM python:3.12-slim AS builder
 
 #  Ваш код здесь #
 WORKDIR /app
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 FROM python:3.12-slim
 WORKDIR /app
@@ -98,8 +101,16 @@ COPY . .
 # Запускаем приложение с помощью uvicorn, делая его доступным по сети
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
 ```
+
+* Multistage имеет экономию но только за счет того, что я НЕ поставил флаг --no-cache-dir в Singlestage у pip install
+В данном тесте Multistage проиграл в 50 секунд а толку не добавил 
 ```
-my-python-app-multi:latest           159acc985c09        400MB           95MB    U
-my-python-app:latest                 f4e66c309f74        400MB           95MB    U
+Без флага --no-cache-dir в Singlestage
+task-4-python-multi:latest    1266390cb5e4        400MB           95MB
+task-4-python-single:latest   3993aa1a9b19        490MB          139MB
+
+С флагом --no-cache-dir в Singlestage разницы нет
+task-4-python-multi:latest    1266390cb5e4        400MB           95MB
+task-4-python-single:latest   18f051c37e53        400MB           95MB
 ```
 </details>
