@@ -330,17 +330,26 @@ curl -L http://127.0.0.1:8090
 <img width="415" height="254" alt="image" src="https://github.com/user-attachments/assets/52920362-224e-448d-8798-9ee57714fc96" />
 
 ## Задача 5
-### Результат
-### Шаги выполнения:
-<details>
-  <summary>Нажмите, чтобы открыть</summary>
+### Результат:
+Как я понял образ https://hub.docker.com/r/schnitzler/mysqldump/ \
+Не поможет мне выполнить задачу вот его ошибка 
+```
+mysqldump: Got error: 1045: "Plugin caching_sha2_password could not be loaded: Error loading shared library 
+/usr/lib/mariadb/plugin/caching_sha2_password.so: No such file or directory" when trying to connect
+```
+Он собран последний раз 3года назад, не хочу менять шифрование пароля в БД на более низкое сделаю просто через другой образ 
 
-* Зафиксировал имя сети в файле proxy.yaml чтобы не заниматься парсингом из-за ерунды
+Зафиксировал имя сети в файле proxy.yaml чтобы не заниматься парсингом из-за ерунды
 <img width="606" height="438" alt="image" src="https://github.com/user-attachments/assets/fd1300c0-1289-4604-9908-64408f9e7a32" />
 
-* Создал самый простой файл backup.sh
-<img width="500" height="368" alt="image" src="https://github.com/user-attachments/assets/a8d38ca1-664b-42f3-b7ab-1282e639281f" />
+Создал самый простой файл backup.sh
+<img width="937" height="377" alt="image" src="https://github.com/user-attachments/assets/d0ff3b3e-6bfb-4ed7-a5b0-4403fd847887" />
 
+Закронил скрипт
+<img width="578" height="381" alt="image" src="https://github.com/user-attachments/assets/5898df0f-a8f3-42c0-9711-c62f8ccc940c" />
+
+Вывел в ls
+<img width="680" height="189" alt="image" src="https://github.com/user-attachments/assets/9028af75-4c7b-4853-aa02-0ac1f016edff" />
 
 </details>
 
