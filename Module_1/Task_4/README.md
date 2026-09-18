@@ -13,8 +13,9 @@
 Пришлось покопаться в ручную, автозамена не подходит, например в SQL запросах или print, нужны f строки \
 Вот коммит с изменениями кода: [https://github.com/Legend1Demp8/shvirtd-example-python/commit/b379febae207961101380d76d96ad56c93715521](https://github.com/Legend1Demp8/shvirtd-example-python/commit/b379febae207961101380d76d96ad56c93715521)
 <img width="1156" height="249" alt="image" src="https://github.com/user-attachments/assets/d098f46c-8bf7-4217-b3cd-9bbdea59e109" />
+Смотрим что таблица netology добавилась в базу данных
 <img width="1128" height="122" alt="image" src="https://github.com/user-attachments/assets/e026aab3-ba29-4909-bb47-2d65f841dae5" />
-Проверка работы \
+Проверка работы бэкенда \
 <img width="529" height="83" alt="image" src="https://github.com/user-attachments/assets/08981ec4-a250-439d-9f5a-b6ecd5fdfead" />
 ```
 curl http://127.0.0.1:5000/requests
