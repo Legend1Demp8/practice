@@ -191,6 +191,7 @@ docker push cr.yandex/crp2h22vhc22kag2filt/task-4-python-multi:latest
 ### Изучение проекта от proxy.yaml:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
+  
 * Проверяем исходя из описания проекта
 ```
 Клиент → 
