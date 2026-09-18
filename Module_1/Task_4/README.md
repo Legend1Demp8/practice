@@ -185,3 +185,75 @@ docker push cr.yandex/crp2h22vhc22kag2filt/task-4-python-multi:latest
 <img width="1575" height="206" alt="image" src="https://github.com/user-attachments/assets/bff86c85-424e-488b-9158-ba45a565348d" />
 
 </details>
+
+## Задача 3
+### Результат:
+### Изучение проекта от proxy.yaml:
+<details>
+  <summary>Нажмите, чтобы открыть</summary>
+* Проверяем исходя из описания проекта
+```
+Клиент → 
+1) Nginx (8090) → 
+2) HAProxy (8080) → 
+3) FastAPI App (5000) → 
+4) MySQL (Странно что тут не указано 3306 ведь если я изменю его при запуске все сломается)
+```
+* Трафик приходит из мира на NGINX
+В файле proxy.yaml указано
+```
+  ingress-proxy:
+    image: nginx:latest
+    restart: always
+    network_mode: host
+    volumes:
+    - ./nginx/ingress/default.conf:/etc/nginx/conf.d/default.conf:rw
+    - ./nginx/ingress/nginx.conf:/etc/nginx/nginx.conf:rw
+```
+Отсюда понятно, что по сети NGINX будет находится на уровне OS -> network_mode: host \
+Исходя из default.conf видно явное проксирование на 127.0.0.1:8080 он же HAPROXY
+* Трафик после NGINX попадает на HAPROXY
+В файле proxy.yaml указано
+```
+  reverse-proxy:
+    image: haproxy:2.4
+    restart: always
+    networks:
+        backend: {}
+    ports:
+    - "127.0.0.1:8080:8080"
+    volumes:
+    - ./haproxy/reverse/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:rw
+```
+Отсюда понятно, что по сети HAPROXY будет находится за сетевым мостом самого docker и иметь ip из сети 172.20.0.0/24
+А порт 8080 будет проброшен из основной системы в контейнер
+В файле haproxy.cfg
+```
+global
+  maxconn 1000
+
+defaults
+default-server init-addr none
+
+frontend http_front
+bind *:8080
+mode http
+default_backend http_back
+
+
+
+backend http_back
+balance roundrobin
+mode http
+server web 172.20.0.5:5000 check
+```
+Слушаем 8080 делаем раундробин и что-то про хелсчек
+Явно зашил IP нашего бекэнда возможно в дальнейшем нужно будет масштабировать
+
+</details>
+### Шаги выполнения:
+<details>
+  <summary>Нажмите, чтобы открыть</summary>
+
+* тест
+</details>
