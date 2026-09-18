@@ -1,5 +1,47 @@
 ## Задача 1
 ### Результат: [https://github.com/Legend1Demp8/shvirtd-example-python](https://github.com/Legend1Demp8/shvirtd-example-python)
+### Самостоятельное задание по MySQL
+<details>
+  <summary>Нажмите, чтобы открыть</summary>
+* Создал отдельную директорию mysql для описания Dockerfile под Mysql
+```
+mkdir mysql
+cd mysql
+```
+* Создал необходимый SQL скрипт инициализации для базы MySQL
+```
+vim init.sql
+CREATE DATABASE IF NOT EXISTS example;
+CREATE USER IF NOT EXISTS 'app'@'%' IDENTIFIED BY 'very_strong';
+GRANT ALL PRIVILEGES ON example.* TO 'app'@'%';
+FLUSH PRIVILEGES;
+```
+* Описал Dockerfile для образа
+```
+# Не использовал CMD или ENTRYPOINT потому что по условиям прошедшего вебинара 
+# понял что они наследуются из базового образа, в нашем случае CMD ["mysqld"]
+FROM mysql:8.0
+COPY init.sql /docker-entrypoint-initdb.d/
+```
+* Запустил docker build
+```
+docker build -t task-4-mysql .
+```
+* Запустил Контейнер
+```
+docker run --rm -d --name task-4-mysql -e MYSQL_ROOT_PASSWORD=very_strong -p 3306:3306 task-4-mysql
+```
+* Проверил что база-данных и пользователь создались
+```
+docker exec -it task-4-mysql mysql -u app -pvery_strong -D example -e "SELECT DATABASE();"
+```
+* Проверил что порт слушается
+```
+ss -lntup | grep 3306
+nc 127.0.0.1 3306
+```
+</details>
+
 ### Шаги выполнения:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
