@@ -68,7 +68,7 @@ proxy.yaml
 .gitignore
 venv
 ```
-* SingleStage
+* SingleStage Время сборки Building 21.0s
 ```
 cat Dockerfile.python-singlestage
 
@@ -82,7 +82,7 @@ RUN pip install -r requirements.txt
 # Запускаем приложение с помощью uvicorn, делая его доступным по сети
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
 ```
-* MultiStage
+* MultiStage Время сборки Building 73.9s
 ```
 cat Dockerfile.python-multistage
 
@@ -103,7 +103,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
 ```
 
 * Multistage имеет экономию но только за счет того, что я НЕ поставил флаг --no-cache-dir в Singlestage у pip install
-В данном тесте Multistage проиграл в 50 секунд а толку не добавил 
+В данном тесте Multistage проиграл в 50 секунд, а толку не добавил 
 ```
 Без флага --no-cache-dir в Singlestage
 task-4-python-multi:latest    1266390cb5e4        400MB           95MB
