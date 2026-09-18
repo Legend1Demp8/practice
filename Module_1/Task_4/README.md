@@ -372,6 +372,7 @@ mysqldump: Got error: 1045: "Plugin caching_sha2_password could not be loaded: E
 * Извлекаем через Dive
 Честно не получилось Ctr+E не работает
 <img width="1637" height="937" alt="image" src="https://github.com/user-attachments/assets/f15a80f0-2e5b-4d7f-b003-01d7d6de942e" />
+
 ```
 docker run --rm -it \
   -v /var/run/docker.sock:/var/run/docker.sock \
