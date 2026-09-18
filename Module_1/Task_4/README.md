@@ -3,6 +3,7 @@
 ### Самостоятельное задание по MySQL
 <details>
   <summary>Нажмите, чтобы открыть</summary>
+  
 * Создал отдельную директорию mysql для описания Dockerfile под Mysql
 ```
 mkdir mysql
