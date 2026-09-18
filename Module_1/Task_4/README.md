@@ -8,7 +8,7 @@
 Вот коммит с изменениями кода:
 <img width="1156" height="249" alt="image" src="https://github.com/user-attachments/assets/d098f46c-8bf7-4217-b3cd-9bbdea59e109" />
 <img width="1128" height="122" alt="image" src="https://github.com/user-attachments/assets/e026aab3-ba29-4909-bb47-2d65f841dae5" />
-Проверка работы
+Проверка работы \
 <img width="529" height="83" alt="image" src="https://github.com/user-attachments/assets/08981ec4-a250-439d-9f5a-b6ecd5fdfead" />
 ```
 curl http://127.0.0.1:5000/requests
