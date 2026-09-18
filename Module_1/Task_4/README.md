@@ -1,6 +1,6 @@
 ## Задача 1
 ### Результат Dockerfile
-<img width="559" height="216" alt="image" src="https://github.com/user-attachments/assets/d80030c3-7981-4ee1-add6-4f4248f683b3" />
+<img width="559" height="216" alt="image" src="https://github.com/user-attachments/assets/d80030c3-7981-4ee1-add6-4f4248f683b3" /> \
 Вот коммит с добавлением файла: [https://github.com/Legend1Demp8/shvirtd-example-python/commit/8cb62cb2243e519d3669c05e79e601fc8b9aadf5](https://github.com/Legend1Demp8/shvirtd-example-python/commit/8cb62cb2243e519d3669c05e79e601fc8b9aadf5)
 ### Результат .dockerignore
 
