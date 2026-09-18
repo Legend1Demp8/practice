@@ -179,7 +179,7 @@ docker push cr.yandex/crp2h22vhc22kag2filt/task-4-python-multi:latest
 ```
 * Проверяю наличие всего в веб интерфейсе
 <img width="1128" height="196" alt="image" src="https://github.com/user-attachments/assets/32b64a17-76df-4ec5-936e-a360a734aacd" />
-<img width="1559" height="208" alt="image" src="https://github.com/user-attachments/assets/c25c7bfb-451f-46c9-b03f-ab1ebd5f7c92" />
+<img width="1559" height="208" alt="image" src="https://github.com/user-attachments/assets/c25c7bfb-451f-46c9-b03f-ab1ebd5f7c92" /> \
 * Проверяю уязвимости
 <img width="1575" height="206" alt="image" src="https://github.com/user-attachments/assets/bff86c85-424e-488b-9158-ba45a565348d" />
 
