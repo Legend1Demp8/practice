@@ -369,14 +369,24 @@ mysqldump: Got error: 1045: "Plugin caching_sha2_password could not be loaded: E
 8) ``` chmod +x ./extracted/bin/terraform ```
 9) ``` ./extracted/bin/terraform version ```
 
-* Извлекаем через Dive \
-Честно не получилось Ctr+E не работает
-<img width="1637" height="937" alt="image" src="https://github.com/user-attachments/assets/f15a80f0-2e5b-4d7f-b003-01d7d6de942e" />
-
+* Извлекаем через Dive двуумя способами оба способа не дали результат 
+### Первый через контейнер
 ```
 docker run --rm -it \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v "$(pwd)/extracted-dive":/tmp \
   docker.io/wagoodman/dive:latest hashicorp/terraform:latest
 ```
+### Второй через локальную установку пакета Dive на виртуалку
+```
+curl -Lo dive.deb "https://github.com/wagoodman/dive/releases/latest/download/dive_0.13.1_linux_amd64.deb"
+sudo apt install -y ./dive.deb
 
+dive --version
+dive 0.13.1
+
+dive hashicorp/terraform:latest
+```
+
+### Результат везде одинаков
+<img width="1637" height="937" alt="image" src="https://github.com/user-attachments/assets/f15a80f0-2e5b-4d7f-b003-01d7d6de942e" />
