@@ -355,6 +355,20 @@ mysqldump: Got error: 1045: "Plugin caching_sha2_password could not be loaded: E
 
 ## Задача 6
 ### Результат:
+* Самый простой способ Ubuntu 20.04 and Docker version 20.10.24, build 297e128
+```
+docker pull hashicorp/terraform:latest
+
+find / -name "terraform"
+/var/lib/docker/overlay2/f57f854bd67a86ac4aedcc23946d22a8df8a2c1805b8c37d15172ab971614583/diff/bin/terraform
+
+cp /var/lib/docker/overlay2/f57f854bd67a86ac4aedcc23946d22a8df8a2c1805b8c37d15172ab971614583/diff/bin/terraform ./
+
+./terraform -v
+Terraform v1.16.3
+on linux_amd64
+```
+
 * Извлекаем через docker save
 <img width="912" height="86" alt="image" src="https://github.com/user-attachments/assets/c10ab92b-0881-4f93-b5a6-c08a29f68118" />
 
