@@ -370,6 +370,8 @@ mysqldump: Got error: 1045: "Plugin caching_sha2_password could not be loaded: E
 9) ``` ./extracted/bin/terraform version ```
 
 * Извлекаем через Dive двуумя способами оба способа не дали результат 
+### Может проблема и общая
+https://github.com/wagoodman/dive/issues/687
 ### Первый через контейнер
 ```
 docker run --rm -it \
