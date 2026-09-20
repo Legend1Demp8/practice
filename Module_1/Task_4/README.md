@@ -410,4 +410,5 @@ dive hashicorp/terraform:latest
 ### UPD2 включил log в файл и debug ничего не пишет
 ### UPD3 захватил процесс strace ошибок нет
 ### UPD4 наверно хватит ковыряться в том что написано и забыто
+### UPD5 Дал последний шанс взял форк у которого даже версия выше вместо 0.13.1 целая 0.14.0 Но все равно не работает (https://github.com/joschi/dive)
 <img width="1637" height="937" alt="image" src="https://github.com/user-attachments/assets/f15a80f0-2e5b-4d7f-b003-01d7d6de942e" />
