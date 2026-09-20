@@ -405,4 +405,5 @@ dive hashicorp/terraform:latest
 ```
 
 ### Результат везде одинаков
+### UPD даже переназначил клавишу ^E на просто x все равно ниче не извлекает хотя на вид задумывается
 <img width="1637" height="937" alt="image" src="https://github.com/user-attachments/assets/f15a80f0-2e5b-4d7f-b003-01d7d6de942e" />
