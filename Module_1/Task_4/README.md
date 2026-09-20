@@ -190,6 +190,7 @@ docker push cr.yandex/crp2h22vhc22kag2filt/task-4-python-multi:latest
 ### Результат:
 Проверяем что запустилось
 <img width="1372" height="301" alt="image" src="https://github.com/user-attachments/assets/bcb6a5f2-722e-423b-b269-932b5559b7ab" />
+
 Проверяем что в Таблицу попадают значения
 <img width="637" height="688" alt="image" src="https://github.com/user-attachments/assets/296892ef-64ae-451c-8599-e910e18986d4" />
 
