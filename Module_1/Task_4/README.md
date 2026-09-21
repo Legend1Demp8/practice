@@ -7,7 +7,7 @@
 2) Файл Dockerfile.python Dockerfile.mysql разместил в корень проекта \
 На всякий случай прямая ссылка на fork: \
 * [Dockerfile.python](https://github.com/Legend1Demp8/shvirtd-example-python/blob/main/Dockerfile.python)
-* [Dockerfile.mysql](https://github.com/Legend1Demp8/shvirtd-example-python/blob/main/Dockerfile.mysql) \
+* [Dockerfile.mysql](https://github.com/Legend1Demp8/shvirtd-example-python/blob/main/Dockerfile.mysql)
 3) Ссылка на весь fork со всеми изменениями [shvirtd-example-python](https://github.com/Legend1Demp8/shvirtd-example-python/tree/main)
 
 ## Задача 1
