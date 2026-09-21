@@ -1,3 +1,14 @@
+## Доработка
+<img width="951" height="91" alt="image" src="https://github.com/user-attachments/assets/ca910baf-6cad-4456-b586-18a5bd343cf9" />
+### Результат:
+1) Файл compose.yaml разместил в корень проекта
+На всякий случай прямая ссылка на fork:
+* [compose.yaml](https://github.com/Legend1Demp8/shvirtd-example-python/blob/main/compose.yaml)
+2) Файл Dockerfile.python Dockerfile.mysql разместил в корень проекта
+На всякий случай прямая ссылка на fork:
+* [Dockerfile.python](https://github.com/Legend1Demp8/shvirtd-example-python/blob/main/Dockerfile.python)
+* [Dockerfile.mysql](https://github.com/Legend1Demp8/shvirtd-example-python/blob/main/Dockerfile.mysql)
+
 ## Задача 1
 ### Результат: Dockerfile.python
 <img width="559" height="216" alt="image" src="https://github.com/user-attachments/assets/d80030c3-7981-4ee1-add6-4f4248f683b3" /> \
