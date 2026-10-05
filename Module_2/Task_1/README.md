@@ -32,4 +32,4 @@ terraform init
 # own secret vars store.
 personal.auto.tfvars
 ```
-</details>details>
+</details>
