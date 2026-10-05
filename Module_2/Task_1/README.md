@@ -59,10 +59,8 @@ resource "docker_container" "nginx" {
 Ошибка 3 - A managed resource "random_password" "random_string_FAKE" has not been declared in the root module. (Управляемый ресурс «random_password» «random_string_FAKE» не был объявлен в корневом модуле.)
 Ошибка 4 - Буква T в верхнем регистре resulT
 ```
-```
 Ошибка 3 исправляем вот так
 name  = "example_${random_password.random_string.result}"
-```
 
 
 </details>
