@@ -13,5 +13,22 @@
 ### Шаги выполнения:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
-* Создал виртуальную машину на Yandex Cloud с OS Ubuntu 26.04
+* Подключил зеркало Яндекса для пакетов
+```
+~# pwd
+/root/netology/ter-homeworks/01/src
+```
+```
+~# cp .terraformrc /root/
+```
+* Скачал зависимости
+```
+terraform init
+```
+* Изучил файл .gitignore чтобы понять в каком файле можно хранить пароли: Ответ - personal.auto.tfvars
+```
+~# cat .gitignore
+# own secret vars store.
+personal.auto.tfvars
+```
 </details>details>
