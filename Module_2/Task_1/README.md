@@ -29,7 +29,7 @@
 Уничтожьте созданные ресурсы с помощью terraform. Убедитесь, что все ресурсы удалены. Приложите содержимое файла terraform.tfstate.
 <img width="1003" height="176" alt="image" src="https://github.com/user-attachments/assets/94b0005c-c674-419d-9c7e-4b5bfe2da80b" />
 <img width="555" height="156" alt="image" src="https://github.com/user-attachments/assets/4cd1fb9a-f451-4ad7-bd3e-137817db758a" />
-
+Ссылка на код [https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/terraform.tfstate](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/terraform.tfstate)
 
 ### Шаги выполнения:
 <details>
@@ -102,6 +102,6 @@ terraform destroy
 ```
 <img width="1003" height="176" alt="image" src="https://github.com/user-attachments/assets/94b0005c-c674-419d-9c7e-4b5bfe2da80b" />
 <img width="555" height="156" alt="image" src="https://github.com/user-attachments/assets/4cd1fb9a-f451-4ad7-bd3e-137817db758a" />
-
+Ссылка на код [https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/terraform.tfstate](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/terraform.tfstate)
 
 </details>
