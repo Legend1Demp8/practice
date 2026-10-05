@@ -15,6 +15,11 @@
 Значение: J6r4ginPSclH94cQ
 <img width="1118" height="746" alt="image" src="https://github.com/user-attachments/assets/a36317b6-0d9e-4669-863d-49a9720c0143" />
 
+Запущенный контейнер и его код
+<img width="1075" height="608" alt="image" src="https://github.com/user-attachments/assets/6e17f474-26ee-42d8-a360-b66e01637f02" />
+Ссылка на код 
+
+
 ### Шаги выполнения:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
