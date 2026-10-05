@@ -19,6 +19,17 @@
 <img width="1075" height="608" alt="image" src="https://github.com/user-attachments/assets/6e17f474-26ee-42d8-a360-b66e01637f02" />
 Ссылка на код: [https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/main.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/main.tf)
 
+Изменить имя контейнера на hello_world и показать docker ps
+<img width="1003" height="83" alt="image" src="https://github.com/user-attachments/assets/30644b21-acd6-4476-9256-308e0b2e00c6" />
+
+Чем опасен auto-approve
+Автоматически подтвердить без участия пользователя (не пишим yes), логично - может наворотить дел
+Пригодится наверно для автоматизации
+
+Уничтожьте созданные ресурсы с помощью terraform. Убедитесь, что все ресурсы удалены. Приложите содержимое файла terraform.tfstate.
+<img width="1003" height="176" alt="image" src="https://github.com/user-attachments/assets/94b0005c-c674-419d-9c7e-4b5bfe2da80b" />
+<img width="555" height="156" alt="image" src="https://github.com/user-attachments/assets/4cd1fb9a-f451-4ad7-bd3e-137817db758a" />
+
 
 ### Шаги выполнения:
 <details>
@@ -71,5 +82,26 @@ name  = "example_${random_password.random_string.result}"
 <img width="1075" height="608" alt="image" src="https://github.com/user-attachments/assets/6e17f474-26ee-42d8-a360-b66e01637f02" />
 
 Ссылка на код: [https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/main.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/main.tf)
+
+* Изменить имя контейнера на hello_world показать docker ps
+```
+меняем 
+name  = "example_${random_password.random_string.result}"
+на
+name  = "hello_world"
+```
+<img width="1003" height="83" alt="image" src="https://github.com/user-attachments/assets/30644b21-acd6-4476-9256-308e0b2e00c6" />
+
+* Чем опасен auto-approve
+Автоматически подтвердить без участия пользователя (не пишим yes), логично - может наворотить дел
+Пригодится наверно для автоматизации
+
+* Уничтожьте созданные ресурсы с помощью terraform. Убедитесь, что все ресурсы удалены. Приложите содержимое файла terraform.tfstate.
+```
+terraform destroy
+```
+<img width="1003" height="176" alt="image" src="https://github.com/user-attachments/assets/94b0005c-c674-419d-9c7e-4b5bfe2da80b" />
+<img width="555" height="156" alt="image" src="https://github.com/user-attachments/assets/4cd1fb9a-f451-4ad7-bd3e-137817db758a" />
+
 
 </details>
