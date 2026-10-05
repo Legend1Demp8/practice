@@ -42,6 +42,7 @@ personal.auto.tfvars
 Ключ: result
 Значение: J6r4ginPSclH94cQ
 <img width="1118" height="746" alt="image" src="https://github.com/user-attachments/assets/c149ec99-09a1-44d2-a643-3aed535a460d" />
+
 * Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла main.tf. Выполните команду terraform validate. Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.
 ```
 ~# terraform validate
