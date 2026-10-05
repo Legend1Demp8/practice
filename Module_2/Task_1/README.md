@@ -10,8 +10,8 @@
 
 ## Задание 1
 ### Результат:
-Наш сгенерированный пароль это:
-Ключ: result
+Наш сгенерированный пароль это: \
+Ключ: result \
 Значение: J6r4ginPSclH94cQ
 <img width="1118" height="746" alt="image" src="https://github.com/user-attachments/assets/a36317b6-0d9e-4669-863d-49a9720c0143" />
 
@@ -67,5 +67,8 @@ resource "docker_container" "nginx" {
 Ошибка 3 исправляем вот так
 name  = "example_${random_password.random_string.result}"
 
+* Выполните код. В качестве ответа приложите: исправленный фрагмент кода и вывод команды docker ps
+<img width="1075" height="608" alt="image" src="https://github.com/user-attachments/assets/6e17f474-26ee-42d8-a360-b66e01637f02" />
+Ссылка на код: [https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/main.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/main.tf)
 
 </details>
