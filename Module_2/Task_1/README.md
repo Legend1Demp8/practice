@@ -10,6 +10,11 @@
 
 ## Задание 1
 ### Результат:
+Наш сгенерированный пароль это:
+Ключ: result
+Значение: J6r4ginPSclH94cQ
+<img width="1118" height="746" alt="image" src="https://github.com/user-attachments/assets/a36317b6-0d9e-4669-863d-49a9720c0143" />
+
 ### Шаги выполнения:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
@@ -32,4 +37,32 @@ terraform init
 # own secret vars store.
 personal.auto.tfvars
 ```
+* Выполните код проекта. Найдите в state-файле секретное содержимое созданного ресурса random_password, пришлите в качестве ответа конкретный ключ и его значение.
+Наш сгенерированный пароль это:
+Ключ: result
+Значение: J6r4ginPSclH94cQ
+<img width="1118" height="746" alt="image" src="https://github.com/user-attachments/assets/c149ec99-09a1-44d2-a643-3aed535a460d" />
+* Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла main.tf. Выполните команду terraform validate. Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.
+```
+~# terraform validate
+Ошибка 1 - All resource blocks must have 2 labels: type, name (Все блоки ресурсов должны иметь 2 метки: Тип, Имя)
+Ошибка 2 - A name must start with a letter or underscore and may contain only letters, digits, underscores, and dashes. (Имя должно начинаться с буквы или символа подчеркивания и может содержать только буквы, цифры, символы подчеркивания и дефисы.)
+```
+Ошибка 1 исправляем вот так
+resource "docker_image" "nginx" {
+
+Ошибка 2 исправляем вот так
+resource "docker_container" "nginx" {
+```
+```
+~# terraform validate
+Ошибка 3 - A managed resource "random_password" "random_string_FAKE" has not been declared in the root module. (Управляемый ресурс «random_password» «random_string_FAKE» не был объявлен в корневом модуле.)
+Ошибка 4 - Буква T в верхнем регистре resulT
+```
+```
+Ошибка 3 исправляем вот так
+name  = "example_${random_password.random_string.result}"
+```
+
+
 </details>
