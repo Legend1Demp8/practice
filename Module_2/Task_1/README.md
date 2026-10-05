@@ -30,13 +30,12 @@
 <img width="1003" height="176" alt="image" src="https://github.com/user-attachments/assets/94b0005c-c674-419d-9c7e-4b5bfe2da80b" />
 <img width="555" height="156" alt="image" src="https://github.com/user-attachments/assets/4cd1fb9a-f451-4ad7-bd3e-137817db758a" />
 
+Ссылка на код [https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/terraform.tfstate](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/terraform.tfstate)
+
 Объясните, почему при этом не был удалён docker-образ nginx:latest. Ответ ОБЯЗАТЕЛЬНО НАЙДИТЕ В ПРЕДОСТАВЛЕННОМ КОДЕ \
 Ответ: потому что мы об этом явно просим в манифесте maint.tf строчка keep_locally = true
 Узнать подробнее мы можем по ссылке [https://library.tf/providers/kreuzwerker/docker/latest/docs/resources/image](https://library.tf/providers/kreuzwerker/docker/latest/docs/resources/image)
 <img width="1365" height="539" alt="image" src="https://github.com/user-attachments/assets/cde1ff0f-7472-48c4-b07a-c92c81dc6b1a" />
-
-
-Ссылка на код [https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/terraform.tfstate](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/terraform.tfstate)
 
 ### Шаги выполнения:
 <details>
