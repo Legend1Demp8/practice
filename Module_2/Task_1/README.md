@@ -17,7 +17,7 @@
 
 Запущенный контейнер и его код
 <img width="1075" height="608" alt="image" src="https://github.com/user-attachments/assets/6e17f474-26ee-42d8-a360-b66e01637f02" />
-Ссылка на код 
+Ссылка на код: [https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/main.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/main.tf)
 
 
 ### Шаги выполнения:
