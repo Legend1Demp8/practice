@@ -55,7 +55,6 @@ resource "docker_image" "nginx" {
 Ошибка 2 исправляем вот так
 resource "docker_container" "nginx" {
 ```
-```
 ~# terraform validate
 Ошибка 3 - A managed resource "random_password" "random_string_FAKE" has not been declared in the root module. (Управляемый ресурс «random_password» «random_string_FAKE» не был объявлен в корневом модуле.)
 Ошибка 4 - Буква T в верхнем регистре resulT
