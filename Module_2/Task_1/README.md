@@ -69,6 +69,7 @@ name  = "example_${random_password.random_string.result}"
 
 * Выполните код. В качестве ответа приложите: исправленный фрагмент кода и вывод команды docker ps
 <img width="1075" height="608" alt="image" src="https://github.com/user-attachments/assets/6e17f474-26ee-42d8-a360-b66e01637f02" />
+
 Ссылка на код: [https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/main.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_1/main.tf)
 
 </details>
