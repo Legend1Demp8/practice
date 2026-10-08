@@ -12,7 +12,7 @@
 preemptible=true (Прерываемая) в процессе обучения поможет мне сэкономить грант и не забыть выключить виртуальную машину \
 core_fraction=5 (Гарантированная доля vCPU), поможет дополнительно сэкономить мне грант до конца обучения поскольку тестовым виртуальным машинам не нужна 100% доля для vCPU
 
-### Решение ошибок:
+### Решение и разбор ошибок:
 <details>
   <summary>Нажмите, чтобы открыть</summary>
   
@@ -63,3 +63,17 @@ platform_id (String). The type of virtual machine to create.
 <img width="1826" height="220" alt="image" src="https://github.com/user-attachments/assets/edade884-6890-4e64-8534-d8e7d6c2e4f8" />
 
 </details>
+
+## Задание 2
+### Результат:
+Создали необходимые переменные
+<img width="1028" height="655" alt="image" src="https://github.com/user-attachments/assets/69364701-3dc6-48c4-89bc-8fe5d40a0ca9" />
+Проверка terraform plan
+
+# Задание 3
+
+# Задание 4
+
+# Задание 5
+
+# Задание 6
