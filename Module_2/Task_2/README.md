@@ -8,12 +8,12 @@
 Terraform init прошел успешно
 #### Ошибки на стадии terraform validate:
 ---
-* Ошибка говорила что отсутствует файл ~/.authorized_key.json
+* Ошибка: говорила что отсутствует файл ~/.authorized_key.json
 Решение: перекинул ключ в необходимую директорию
 Terraform validate прошел успешно
 #### Ошибки на стадии terraform apply:
 ---
-* rpc error: code = FailedPrecondition desc = Platform "standart-v4" not found \
+* Ошибка: rpc error: code = FailedPrecondition desc = Platform "standart-v4" not found \
 Читаю документацию на Yandex CLoud при создании вм 
 ```
 platform_id (String). The type of virtual machine to create.
@@ -23,16 +23,16 @@ platform_id (String). The type of virtual machine to create.
 
 Решение: Поставил standarD-v2
 
-* the specified number of cores is not available on platform "standard-v2"; allowed core number: 2, 4 \
+* Ошибка: the specified number of cores is not available on platform "standard-v2"; allowed core number: 2, 4 \
 Тут все просто мой тип не поддерживает конфигурацию при не четном кол-ве ядер у меня указано 1 \
 Решение: Поставил 2 ядра \
 
-* rpc error: code = ResourceExhausted desc = Resource allocation is restricted \
+* Ошибка: rpc error: code = ResourceExhausted desc = Resource allocation is restricted \
 Выделение ресурсов - ограничено, как я понял дело в том что произошел инцидент в зоне доступности B \
 <img width="974" height="682" alt="image" src="https://github.com/user-attachments/assets/1fcfd20c-a4fd-4eb2-91ba-b4d6e45c2b9d" />
 
 Решение: делаем Terraform destroy переезжаем на другую зону доступности изменяя default с зоны ru-central1-a на ru-central1-d \
-* Не помогло \
+Не помогло \
 Делаем виртуалку руками - таже ошибка значит дело не в коде, а в инциденте - пока ожидаем \
 <img width="1826" height="220" alt="image" src="https://github.com/user-attachments/assets/edade884-6890-4e64-8534-d8e7d6c2e4f8" />
 
