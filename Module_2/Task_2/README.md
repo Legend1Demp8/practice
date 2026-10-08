@@ -10,7 +10,7 @@ Terraform init прошел успешно
 Решение: перекинул ключ в необходимую директорию
 Terraform validate прошел успешно
 * Ошибки на стадии terraform apply:
----
+
 1) rpc error: code = FailedPrecondition desc = Platform "standart-v4" not found
 Решение: Читаю документацию на Yandex CLoud при создании вм 
 ```
@@ -18,13 +18,12 @@ platform_id (String). The type of virtual machine to create.
 ```
 Соответственно ответ прост такого типа платформы не существует так еще и опечатка
 <img width="881" height="465" alt="image" src="https://github.com/user-attachments/assets/89b4f410-db1e-4285-a3de-2b46891588de" />
-
 Решение: Поставил standarD-v2
----
+
 2) the specified number of cores is not available on platform "standard-v2"; allowed core number: 2, 4 \
 Тут все просто мой тип не поддерживает конфигурацию при не четном кол-ве ядер у меня указано 1 \
 Решение: Поставил 2 ядра \
----
+
 3) rpc error: code = ResourceExhausted desc = Resource allocation is restricted \
 Выделение ресурсов - ограничено, как я понял дело в том что произошел инцидент в зоне доступности B \
 Решение: делаем Terraform destroy переезжаем на другую зону доступности изменяя default с зоны ru-central1-a на ru-central1-d \
