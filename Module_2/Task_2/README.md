@@ -34,13 +34,16 @@ platform_id (String). The type of virtual machine to create.
 Результат: Terraform apply выдал новую ошибку
 ```
 
-* Ошибка: rpc error: code = ResourceExhausted desc = Resource allocation is restricted \
-Выделение ресурсов - ограничено, как я понял дело в том что произошел инцидент в зоне доступности B \
+* Ошибка: rpc error: code = ResourceExhausted desc = Resource allocation is restricted
+```
+Решение: Проверил статус сервисов в Yandex Cloud - Написано что в зоне доступности B наблюдается проблемы
+Как вариант попробовал сделать перенос на другую зону доступности.
+Выполнил Terraform destroy следом поменял зону доступности с default = "ru-central1-a" на default = "ru-central1-d"
+Выполнил Terraform apply - Не помогло та же ошибка
+Попробовал создать виртуальную машину руками через веб - Не помогло та же ошибка
+Жду восстановления доступности сервиса
+```
 <img width="974" height="682" alt="image" src="https://github.com/user-attachments/assets/1fcfd20c-a4fd-4eb2-91ba-b4d6e45c2b9d" />
-
-Решение: делаем Terraform destroy переезжаем на другую зону доступности изменяя default с зоны ru-central1-a на ru-central1-d \
-Не помогло \
-Делаем виртуалку руками - таже ошибка значит дело не в коде, а в инциденте - пока ожидаем \
 <img width="1826" height="220" alt="image" src="https://github.com/user-attachments/assets/edade884-6890-4e64-8534-d8e7d6c2e4f8" />
 
 
