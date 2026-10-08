@@ -1,16 +1,18 @@
 ## Задание 1
 ### Результат:
 Найти ошибки в проекте
-* Ошибки на стадии terraform init:
+#### Ошибки на стадии terraform init:
+---
 1) Версия терраформ была указана явно ~>1.12.0 тоесть в пределах 1.12 у нас выше
 Решение: я поставил просто >1.12.0
 Terraform init прошел успешно
-* Ошибки на стадии terraform validate:
+#### Ошибки на стадии terraform validate:
+---
 1) Ошибка говорила что отсутствует файл ~/.authorized_key.json
 Решение: перекинул ключ в необходимую директорию
 Terraform validate прошел успешно
-* Ошибки на стадии terraform apply:
-
+#### Ошибки на стадии terraform apply:
+---
 1) rpc error: code = FailedPrecondition desc = Platform "standart-v4" not found
 Решение: Читаю документацию на Yandex CLoud при создании вм 
 ```
