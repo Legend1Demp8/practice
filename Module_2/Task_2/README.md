@@ -13,12 +13,12 @@ Terraform init прошел успешно
 Terraform validate прошел успешно
 #### Ошибки на стадии terraform apply:
 ---
-* rpc error: code = FailedPrecondition desc = Platform "standart-v4" not found
-Решение: Читаю документацию на Yandex CLoud при создании вм 
+* rpc error: code = FailedPrecondition desc = Platform "standart-v4" not found \
+Читаю документацию на Yandex CLoud при создании вм 
 ```
 platform_id (String). The type of virtual machine to create.
 ```
-Соответственно ответ прост такого типа платформы не существует так еще и опечатка
+Соответственно ответ прост такого типа платформы не существует так еще и опечатка \
 <img width="881" height="465" alt="image" src="https://github.com/user-attachments/assets/89b4f410-db1e-4285-a3de-2b46891588de" />
 Решение: Поставил standarD-v2
 
