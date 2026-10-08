@@ -11,23 +11,28 @@
 #### Ошибки на стадии terraform validate:
 ---
 * Ошибка: говорила что отсутствует файл ~/.authorized_key.json
+```
 Решение: перекинул ключ в необходимую директорию
 Результат: Terraform validate прошел успешно
+```
 #### Ошибки на стадии terraform apply:
 ---
-* Ошибка: rpc error: code = FailedPrecondition desc = Platform "standart-v4" not found \
-Читаю документацию на Yandex CLoud при создании вм 
+* Ошибка: rpc error: code = FailedPrecondition desc = Platform "standart-v4" not found
 ```
+Решение: Читаю документацию на Yandex CLoud при создании вм раздел платформа https://yandex.cloud/ru/docs/compute/concepts/vm-platforms 
 platform_id (String). The type of virtual machine to create.
+Соответственно ответ прост - такого типа платформы не существует так еще и опечатка standarT-v4
+Установил значение platform_id = "standard-v2" вместо platform_id = "standart-v4"
+Результат: Terraform apply выдал новую ошибку
 ```
-Соответственно ответ прост такого типа платформы не существует так еще и опечатка \
 <img width="881" height="465" alt="image" src="https://github.com/user-attachments/assets/89b4f410-db1e-4285-a3de-2b46891588de" />
 
-Решение: Поставил standarD-v2
-
-* Ошибка: the specified number of cores is not available on platform "standard-v2"; allowed core number: 2, 4 \
-Тут все просто мой тип не поддерживает конфигурацию при не четном кол-ве ядер у меня указано 1 \
-Решение: Поставил 2 ядра \
+* Ошибка: the specified number of cores is not available on platform "standard-v2"; allowed core number: 2, 4
+```
+Решение: Тут все просто мой тип платформы не поддерживает конфигурацию при не четном кол-ве ядер у меня указано 1
+Установил значение в два ядра cores = 2 вместо cores = 1
+Результат: Terraform apply выдал новую ошибку
+```
 
 * Ошибка: rpc error: code = ResourceExhausted desc = Resource allocation is restricted \
 Выделение ресурсов - ограничено, как я понял дело в том что произошел инцидент в зоне доступности B \
