@@ -13,7 +13,9 @@ preemptible=true (Прерываемая) в процессе обучения �
 core_fraction=5 (Гарантированная доля vCPU), поможет дополнительно сэкономить мне грант до конца обучения поскольку тестовым виртуальным машинам не нужна 100% доля для vCPU
 
 ### Решение ошибок:
-
+<details>
+  <summary>Нажмите, чтобы открыть</summary>
+  
 Найти ошибки в проекте
 #### Ошибки на стадии terraform init:
 ---
@@ -59,20 +61,5 @@ platform_id (String). The type of virtual machine to create.
 ```
 <img width="974" height="682" alt="image" src="https://github.com/user-attachments/assets/1fcfd20c-a4fd-4eb2-91ba-b4d6e45c2b9d" />
 <img width="1826" height="220" alt="image" src="https://github.com/user-attachments/assets/edade884-6890-4e64-8534-d8e7d6c2e4f8" />
-
-
-### Шаги выполнения:
-<details>
-  <summary>Нажмите, чтобы открыть</summary>
-  
-* Изучите проект. В файле variables.tf объявлены переменные для Yandex provider.
-done
-* Создайте сервисный аккаунт и ключ. service_account_key_file.
-Было сделано из прошлых работ
-* Сгенерируйте новый или используйте свой текущий ssh-ключ. Запишите его открытую(public) часть в переменную vms_ssh_public_root_key.
-Сгенерировал ключ ed25519 и записал его в файл
-<img width="821" height="86" alt="image" src="https://github.com/user-attachments/assets/88e83d57-37da-42eb-96e1-5c64066d7b96" />
-
-
 
 </details>
