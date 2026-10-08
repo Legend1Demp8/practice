@@ -29,9 +29,11 @@ platform_id (String). The type of virtual machine to create.
 
 * rpc error: code = ResourceExhausted desc = Resource allocation is restricted \
 Выделение ресурсов - ограничено, как я понял дело в том что произошел инцидент в зоне доступности B \
+<img width="974" height="682" alt="image" src="https://github.com/user-attachments/assets/1fcfd20c-a4fd-4eb2-91ba-b4d6e45c2b9d" />
+
 Решение: делаем Terraform destroy переезжаем на другую зону доступности изменяя default с зоны ru-central1-a на ru-central1-d \
 * Не помогло \
-Делаем виртуалку руками - таже ошибка значит дело не в коде а в инциденте - пока ожидаем \
+Делаем виртуалку руками - таже ошибка значит дело не в коде, а в инциденте - пока ожидаем \
 <img width="1826" height="220" alt="image" src="https://github.com/user-attachments/assets/edade884-6890-4e64-8534-d8e7d6c2e4f8" />
 
 
