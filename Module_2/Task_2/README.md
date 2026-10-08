@@ -20,6 +20,7 @@ platform_id (String). The type of virtual machine to create.
 ```
 Соответственно ответ прост такого типа платформы не существует так еще и опечатка \
 <img width="881" height="465" alt="image" src="https://github.com/user-attachments/assets/89b4f410-db1e-4285-a3de-2b46891588de" />
+
 Решение: Поставил standarD-v2
 
 * 2) the specified number of cores is not available on platform "standard-v2"; allowed core number: 2, 4 \
