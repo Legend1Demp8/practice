@@ -5,8 +5,10 @@
 5) Подключитесь к консоли ВМ через ssh и выполните команду curl ifconfig.me
 
 Скрин из ЛК Yandex.Cloud
+<img width="1730" height="375" alt="image" src="https://github.com/user-attachments/assets/64f5e869-31f1-4bea-b88b-a80b8d62f47b" />
 
 Скрин из виртуальной машины
+<img width="501" height="192" alt="image" src="https://github.com/user-attachments/assets/7e3a61ab-1e1a-4e25-8eb2-9a384b966a89" />
 
 6) Ответьте, как в процессе обучения могут пригодиться параметры preemptible = true и core_fraction=5 в параметрах ВМ
 preemptible=true (Прерываемая) в процессе обучения поможет мне сэкономить грант и не забыть выключить виртуальную машину \
