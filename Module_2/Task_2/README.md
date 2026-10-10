@@ -1,3 +1,11 @@
+## Все файлы затронутые в проекте
+[locals.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/locals.tf)
+[main.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/main.tf)
+[outputs.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/outputs.tf)
+[providers.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/providers.tf)
+[variables.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/variables.tf)
+[vms_platform.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/vms_platform.tf)
+
 ## Задание 1
 ### Результат:
 4) Исправьте намеренно допущенные синтаксические ошибки. Ответьте, в чём заключается их суть
