@@ -75,6 +75,11 @@ platform_id (String). The type of virtual machine to create.
 <img width="1019" height="85" alt="image" src="https://github.com/user-attachments/assets/506b0e2d-a243-469c-8949-e284fc0396cb" />
 
 # Задание 3
+ВМ должна работать в зоне "ru-central1-b" зона b была не доступна, создал в d
+<img width="1351" height="179" alt="image" src="https://github.com/user-attachments/assets/8ce6bb08-681e-4939-9115-c6ad2ba53bab" />
+Сама ВМ
+<img width="1721" height="253" alt="image" src="https://github.com/user-attachments/assets/fa3eb8b2-ec4e-41ea-afea-0aa06f05cff8" />
+
 
 # Задание 4
 
