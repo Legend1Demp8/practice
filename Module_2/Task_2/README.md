@@ -90,3 +90,5 @@ platform_id (String). The type of virtual machine to create.
 
 
 # Задание 6
+Создаем 2 map
+<img width="955" height="734" alt="image" src="https://github.com/user-attachments/assets/76aa44cb-d6aa-4da7-9dc1-1f317b811b79" />
