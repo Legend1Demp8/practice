@@ -85,5 +85,8 @@ platform_id (String). The type of virtual machine to create.
 <img width="517" height="199" alt="image" src="https://github.com/user-attachments/assets/b1690300-d614-4e09-8b29-c0c011bd1b8c" />
 
 # Задание 5
+Файл locals.tf
+<img width="1056" height="829" alt="image" src="https://github.com/user-attachments/assets/b9a3c8a0-0973-456d-8a85-801225c1ea8a" />
+
 
 # Задание 6
