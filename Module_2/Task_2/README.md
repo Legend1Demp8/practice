@@ -82,6 +82,7 @@ platform_id (String). The type of virtual machine to create.
 
 
 # Задание 4
+<img width="517" height="199" alt="image" src="https://github.com/user-attachments/assets/b1690300-d614-4e09-8b29-c0c011bd1b8c" />
 
 # Задание 5
 
