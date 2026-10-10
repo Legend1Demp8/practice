@@ -70,7 +70,9 @@ platform_id (String). The type of virtual machine to create.
 ### Результат:
 Создали необходимые переменные
 <img width="1028" height="655" alt="image" src="https://github.com/user-attachments/assets/69364701-3dc6-48c4-89bc-8fe5d40a0ca9" />
+
 Проверка terraform plan
+<img width="1019" height="85" alt="image" src="https://github.com/user-attachments/assets/506b0e2d-a243-469c-8949-e284fc0396cb" />
 
 # Задание 3
 
