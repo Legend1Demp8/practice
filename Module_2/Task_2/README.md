@@ -92,3 +92,6 @@ platform_id (String). The type of virtual machine to create.
 # Задание 6
 Создаем 2 map
 <img width="955" height="734" alt="image" src="https://github.com/user-attachments/assets/76aa44cb-d6aa-4da7-9dc1-1f317b811b79" />
+terrafrom apply -> 0 изменений
+<img width="1021" height="312" alt="image" src="https://github.com/user-attachments/assets/c66c1a97-8fb8-48e5-98cf-b262f657d774" />
+
