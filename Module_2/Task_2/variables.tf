@@ -49,9 +49,8 @@ variable "vpc_develop_a_name" {
 
 ###ssh vars
 
-variable "vms_ssh_root_key" {
-  type        = string
-  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILXNEhyzbsfDYpw5Q7vz9FFPdy+BSa6OANyaPPlxlMhQ root@gw-spb"
-  description = "ssh-keygen -t ed25519"
-}
-
+#variable "vms_ssh_root_key" {
+#  type        = string
+#  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILXNEhyxwyfDYpw5Q7vz9FFPdy+BSa6OANyaPPlxlMhQ root@gw-spb"
+#  description = "ssh-keygen -t ed25519"
+#}
