@@ -35,7 +35,8 @@ variable "each_vm" {
 Файл [for_each-vm.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/for_each-vm.tf)
 
 ## Задание 3
-
+### Решение
+Файл [disk_vm.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/disk_vm.tf)
 
 ## Задание 4
 
