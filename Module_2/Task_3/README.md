@@ -1,3 +1,6 @@
+### Для общего зачёта создайте в вашем GitHub-репозитории новую ветку terraform-03. Закоммитьте в эту ветку свой финальный код проекта, пришлите ссылку на коммит.
+[github](https://github.com/Legend1Demp8/terraform-03/tree/terraform-03)
+
 ## Задание 1
 ### Результат:
 <img width="980" height="628" alt="image" src="https://github.com/user-attachments/assets/f3c7ee30-2a95-483e-bbb5-78ef3ffe1546" />
