@@ -39,8 +39,13 @@ variable "each_vm" {
 Файл [disk_vm.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/disk_vm.tf)
 
 ## Задание 4
+В файле ansible.tf создайте inventory-файл для ansible. Используйте функцию tepmplatefile и файл-шаблон для создания ansible inventory-файла из лекции. Готовый код возьмите из демонстрации к лекции demonstration2. Передайте в него в качестве переменных группы виртуальных машин из задания 2.1, 2.2 и 3.2, т. е. 5 ВМ.
+<img width="918" height="515" alt="image" src="https://github.com/user-attachments/assets/7f8a0d40-9be7-4c75-9d03-034b0c2e833d" />
+### Решение
+Файл [ansible.tftpl](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/ansible.tftpl)
+Файл [ansible.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/ansible.tf)
+Файл [inventory.ini](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/inventory.ini)
 
 
+<img width="1638" height="256" alt="image" src="https://github.com/user-attachments/assets/11be38b0-d940-4af9-8b08-79eb79816efa" />
 
-
-<img width="1582" height="258" alt="image" src="https://github.com/user-attachments/assets/67e9dc3c-0d51-4bbc-9492-7178160c8f20" />
