@@ -6,11 +6,11 @@ variable "vm_web_image_family" {
 }
 
 ###vm vars
-variable "vm_web_name" {
-  type        = string
-  default     = "netology-develop-platform-web"
-  description = "Default vm name"
-}
+#variable "vm_web_name" {
+#  type        = string
+#  default     = "netology-develop-platform-web"
+#  description = "Default vm name"
+#}
 
 variable "vm_web_platform_id" {
   type    = string
@@ -50,11 +50,11 @@ variable "vm_web_nat" {
 
 
 ###vm vars
-variable "vm_db_name" {
-  type        = string
-  default     = "netology-develop-platform-db"
-  description = "Default vm name"
-}
+#variable "vm_db_name" {
+#  type        = string
+#  default     = "netology-develop-platform-db"
+#  description = "Default vm name"
+#}
 
 variable "vm_db_platform_id" {
   type    = string
