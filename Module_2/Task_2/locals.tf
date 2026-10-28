@@ -1,7 +1,4 @@
 locals {
-  env      = "netology-develop"
-  project  = "platform"
-
-  vm_web_name = "${local.env}-${local.project}-web"
-  vm_db_name  = "${local.env}-${local.project}-db"
+  vm_web_name = "${var.env}-${var.project}-web"
+  vm_db_name  = "${var.env}-${var.project}-db"
 }
