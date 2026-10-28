@@ -45,7 +45,15 @@ variable "vpc_develop_a_name" {
   description = "VPC network & subnet name"
 }
 
+variable "env" {
+  type    = string
+  default = "netology-develop"
+}
 
+variable "project" {
+  type    = string
+  default = "platform"
+}
 
 ###ssh vars
 
