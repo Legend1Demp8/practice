@@ -25,7 +25,7 @@ variable "each_vm" {
 ### Подзадача 3
 3. ВМ, описанные в файле count-vm.tf, должны создаваться после ВМ, описанных в файле for_each-vm.tf
 ### Решение
-Файл [count-vm.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/count-vm.tf)
+Файл [count-vm.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/count-vm.tf) \
 `depends_on = [yandex_compute_instance.db]`
 
 ### Подзадача 4
