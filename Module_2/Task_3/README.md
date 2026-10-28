@@ -31,7 +31,7 @@ variable "each_vm" {
 ### Подзадача 4
 4. Используйте функцию file в local-переменной для считывания ключа ~/.ssh/id_rsa.pub
 ### Решение
-Файл [locals.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/locals.tf)
+Файл [locals.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/locals.tf) \
 Файл [for_each-vm.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/for_each-vm.tf)
 
 ## Задание 3
