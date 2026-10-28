@@ -1,3 +1,16 @@
+## Доработка
+Пункт 6.5 «закомментируйте неиспользуемые переменные» не выполнен: vm_web_cores, memory, core_fraction, vm_*_name и vms_ssh_root_key остались;
+Пункта 6.5 не нашел есть 6.3 (Найдите и закоментируйте все, более не используемые переменные проекта.)
+Закомментировал неиспользуемые переменные в файле [vms_platform.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/vms_platform.tf)
+1) vm_db_cores
+2) vm_db_memory
+3) vm_db_core_fraction
+4) vm_web_cores
+5) vm_web_memory
+6) vm_web_core_fraction
+Закомментировал неиспользуемые переменные в файле [variables.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/variables.tf)
+1) vms_ssh_root_key
+
 ## Все файлы затронутые в проекте
 [locals.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/locals.tf)
 [main.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/main.tf)
