@@ -8,6 +8,7 @@
 4) vm_web_cores
 5) vm_web_memory
 6) vm_web_core_fraction
+7) vm_*_name
 
 Закомментировал неиспользуемые переменные в файле [variables.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/variables.tf)
 1) vms_ssh_root_key
