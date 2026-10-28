@@ -12,8 +12,10 @@
 Закомментировал неиспользуемые переменные в файле [variables.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/variables.tf)
 1) vms_ssh_root_key
 ### Задача 2 (в locals имена собраны из захардкоженных строк, а по заданию нужна интерполяция из нескольких переменных.)
-Переделал файл [locals.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/locals.tf)
 В файле locals.tf опишите в одном local-блоке имя каждой ВМ, используйте интерполяцию ${..} с НЕСКОЛЬКИМИ переменными по примеру из лекции.
+
+Переделал файл [locals.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_2/locals.tf)
+
 <img width="947" height="591" alt="image" src="https://github.com/user-attachments/assets/6b9867d9-04b0-4826-b78a-fddddc9b5090" />
 
 ---
