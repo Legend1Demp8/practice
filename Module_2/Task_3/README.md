@@ -46,7 +46,7 @@ variable "each_vm" {
 Файл [ansible.tftpl](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/ansible.tftpl) \
 Файл [ansible.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/ansible.tf) \
 Файл [inventory.ini](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/inventory.ini)
-
+<img width="636" height="176" alt="image" src="https://github.com/user-attachments/assets/dc6b7dc4-7d4d-4904-b909-6488b1e68a0c" />
 
 <img width="1638" height="256" alt="image" src="https://github.com/user-attachments/assets/11be38b0-d940-4af9-8b08-79eb79816efa" />
 
