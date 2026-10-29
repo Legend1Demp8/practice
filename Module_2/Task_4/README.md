@@ -10,7 +10,7 @@
 ### Решение:
 Модуль \
 <img width="365" height="107" alt="image" src="https://github.com/user-attachments/assets/db8119c8-0930-4b4d-aff2-e6c1d91d5dea" />
-Применяем сеть из модуля
+Применяем сеть из модуля на две вм \
 <img width="730" height="560" alt="image" src="https://github.com/user-attachments/assets/5a999ff8-1325-40bd-af07-0b6763522b64" />
 <img width="1736" height="416" alt="image" src="https://github.com/user-attachments/assets/e99e719e-fcc3-4fae-aee3-11eeb4cd1ad4" />
 
