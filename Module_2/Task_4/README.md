@@ -8,7 +8,9 @@
 
 ## Задание 2
 ### Решение:
-<img width="912" height="771" alt="image" src="https://github.com/user-attachments/assets/64c946bf-46d5-4d23-8b06-d7822e8704be" />
+Модуль
+<img width="365" height="107" alt="image" src="https://github.com/user-attachments/assets/db8119c8-0930-4b4d-aff2-e6c1d91d5dea" />
+
 
 
 
