@@ -3,6 +3,11 @@
 
 ## Задание 1
 ### Решение
+
+### Как делал
+<details>
+  <summary>Заголовок списка (нажми на меня)</summary>
+
 #### tflint на папку src для урока 04
 docker run --rm -v /root/netology/super_temp/ter-homeworks/04/src/:/data -t ghcr.io/terraform-linters/tflint --recursive
 1)  Missing version constraint for provider "yandex" in `required_providers` (terraform_required_providers)
@@ -51,3 +56,4 @@ docker run --rm -v /root/netology/super_temp/ter-homeworks/04/demonstration1/:/t
 <img width="1514" height="164" alt="image" src="https://github.com/user-attachments/assets/52a05cfe-f9b9-4724-8f23-eb186663819f" />
 <img width="577" height="878" alt="image" src="https://github.com/user-attachments/assets/f82dc7c4-0bde-4f97-9915-b83ed8486747" />
 
+</details>
