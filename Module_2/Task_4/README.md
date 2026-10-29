@@ -8,7 +8,7 @@
 
 ## Задание 2
 ### Решение:
-Модуль
+Модуль \
 <img width="365" height="107" alt="image" src="https://github.com/user-attachments/assets/db8119c8-0930-4b4d-aff2-e6c1d91d5dea" />
 
 
