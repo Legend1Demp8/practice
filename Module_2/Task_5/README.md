@@ -15,6 +15,7 @@ Warning: [Fixable] variable "vm_web_name" is declared but not used
 Warning: [Fixable] variable "vm_db_name" is declared but not used
 ```
 <img width="1224" height="555" alt="image" src="https://github.com/user-attachments/assets/46bf3753-3bff-42eb-9eb4-6aeac543ded9" />
+
 #### tflint на папку demonstration1 для урока 04
 docker run --rm -v /root/netology/super_temp/ter-homeworks/04/demonstration1/:/data -t ghcr.io/terraform-linters/tflint --recursive
 1) Missing version constraint for provider "random" in `required_providers` (terraform_required_providers)
