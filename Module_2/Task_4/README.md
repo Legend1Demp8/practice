@@ -16,7 +16,41 @@
 Terraform-docs \
 <img width="1167" height="190" alt="image" src="https://github.com/user-attachments/assets/58117f48-8752-49c9-a527-426d71c0888b" />
 
+## Задание 3
+### Решение:
+Выведите список ресурсов в стейте. \
+<img width="665" height="218" alt="image" src="https://github.com/user-attachments/assets/16ae7894-d3d5-4ea0-910b-600f2e511679" />
+Полностью удалите из стейта модуль vpc. \ 
+<img width="879" height="108" alt="image" src="https://github.com/user-attachments/assets/c309462f-3152-420d-9e6e-a351f1341106" />
+Полностью удалите из стейта модуль vm. \
+<img width="1231" height="241" alt="image" src="https://github.com/user-attachments/assets/5e37d16c-12d0-4cf3-b9e9-9756f1e6c57c" />
+Результат удаления \
+<img width="698" height="132" alt="image" src="https://github.com/user-attachments/assets/fa985b9e-4100-4fa5-a370-4327188d5f94" />
 
+Восстановление
+```
+Сеть
+terraform import module.marketing_vpc.yandex_vpc_network.this enpnbh8aeks4rh7t1lb1
+
+Подсеть
+terraform import module.marketing_vpc.yandex_vpc_subnet.this fl8tn98rtl8146qgutch
+
+Первая вм
+terraform import 'module.vm_analytics.yandex_compute_instance.vm[0]' fv4v2l5akbnkpldrmdud
+
+Вторая вм
+terraform import 'module.vm_marketing.yandex_compute_instance.vm[0]' fv4tck93m551c0kfg4qv
+```
+Скриншот восстановления \
+Сеть \
+<img width="1279" height="505" alt="image" src="https://github.com/user-attachments/assets/f9636155-9741-4112-945b-08b40e3bc28c" />
+Подсеть \
+<img width="1274" height="504" alt="image" src="https://github.com/user-attachments/assets/20fe529a-8ee5-4892-9d54-166819229f24" />
+Одна вм (вторая такаяже не стал тратить место) \
+<img width="1086" height="402" alt="image" src="https://github.com/user-attachments/assets/1b7a987b-cce5-40bb-8bf5-c9efe76a7e87" />
+
+Terraform plan показывает не значимое изменение
+<img width="854" height="370" alt="image" src="https://github.com/user-attachments/assets/1a246fd7-cf9e-4e7c-805d-fd4cdf81e0ae" />
 
 
 
