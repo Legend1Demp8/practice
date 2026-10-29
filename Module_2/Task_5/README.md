@@ -6,7 +6,7 @@
 
 ### Как делал
 <details>
-  <summary>Заголовок списка (нажми на меня)</summary>
+  <summary>Как делал</summary>
 
 #### tflint на папку src для урока 04
 docker run --rm -v /root/netology/super_temp/ter-homeworks/04/src/:/data -t ghcr.io/terraform-linters/tflint --recursive
