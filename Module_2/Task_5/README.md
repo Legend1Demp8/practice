@@ -7,6 +7,7 @@
 docker run --rm -v /root/netology/super_temp/ter-homeworks/04/src/:/data -t ghcr.io/terraform-linters/tflint --recursive
 1)  Missing version constraint for provider "yandex" in `required_providers` (terraform_required_providers)
 Не зафиксирована версия провайдера
+
 Следующие ошибки говорят про то что объявлены переменные которые не используются
 Warning: [Fixable] variable "vms_ssh_root_key" is declared but not used
 Warning: [Fixable] variable "vm_web_name" is declared but not used
