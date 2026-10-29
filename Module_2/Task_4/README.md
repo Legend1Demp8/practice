@@ -1,3 +1,6 @@
+## Github репа проекта
+[github](https://github.com/Legend1Demp8/terraform-04)
+
 ## Задание 1
 ### Решение:
 <img width="1723" height="282" alt="image" src="https://github.com/user-attachments/assets/6032357b-fa41-4b3c-a4d3-126845a7896d" />
@@ -52,6 +55,7 @@ terraform import 'module.vm_marketing.yandex_compute_instance.vm[0]' fv4tck93m55
 Terraform plan показывает не значимое изменение
 <img width="854" height="370" alt="image" src="https://github.com/user-attachments/assets/1a246fd7-cf9e-4e7c-805d-fd4cdf81e0ae" />
 
-
+## Github
+[github](https://github.com/Legend1Demp8/terraform-04)
 
 
