@@ -1,4 +1,12 @@
-### Для общего зачёта создайте в вашем GitHub-репозитории новую ветку terraform-03. Закоммитьте в эту ветку свой финальный код проекта, пришлите ссылку на коммит.
+## Доработка
+## Группы инвентаря должны называться webservers, databases и storage, а у вас web и db;
+### Решение 
+Изменен Файл [ansible.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/ansible.tf) \
+<img width="640" height="158" alt="image" src="https://github.com/user-attachments/assets/3fe1b80c-af0d-4c8a-b040-52801555e20c" />
+## Код нужно закоммитить в ветку terraform-03 и прислать ссылку на коммит.
+[github](https://github.com/Legend1Demp8/terraform-03/tree/terraform-03)
+
+## Для общего зачёта создайте в вашем GitHub-репозитории новую ветку terraform-03. Закоммитьте в эту ветку свой финальный код проекта, пришлите ссылку на коммит.
 [github](https://github.com/Legend1Demp8/terraform-03/tree/terraform-03)
 
 ## Задание 1
