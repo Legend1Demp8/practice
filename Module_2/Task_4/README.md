@@ -9,7 +9,7 @@
 
 ## 3) В задании прямо сказано «хардкод значения не допустимы», а в вызовах модулей зоны, cidr, platform и image_family прописаны строками;
 ### Решение
-Изменен Файл [main.tf](https://github.com/Legend1Demp8/terraform-04/blob/terraform-04/main.tf)
+Изменен Файл [main.tf](https://github.com/Legend1Demp8/terraform-04/blob/terraform-04/main.tf) \
 Изменен Файл [variables.tf](https://github.com/Legend1Demp8/terraform-04/blob/terraform-04/variables.tf)
 
 ## 4) Remote-модуль лучше пинить по тегу или коммиту, а не ref=main;
