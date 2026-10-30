@@ -1,5 +1,17 @@
-## Github репа проекта
-[github](https://github.com/Legend1Demp8/terraform-04)
+## Доработка
+## 1) В задании 2.4 сказано заменить ресурсы yandex_vpc_network и yandex_vpc_subnet модулем, а старые develop, develop_1 и develop_2 остались в main.tf и создаются впустую;
+### Решение
+Изменен Файл [main.tf]()
+## 2) 
+
+## 3)
+
+## 4) Remote-модуль лучше пинить по тегу или коммиту, а не ref=main;
+Изменен Файл [main.tf]()
+
+## 5) По правилам приёма нужна ветка terraform-04, а код лежит в main.
+[github]()
+
 
 ## Задание 1
 ### Решение:
