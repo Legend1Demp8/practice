@@ -1,33 +1,33 @@
 resource "yandex_compute_instance" "web" {
   depends_on = [yandex_compute_instance.db]
-  count = 2
+  count = var.web_instance_count
 
   name = "web-${count.index + 1}"
-  platform_id = "standard-v2"
+  platform_id = var.web_instance_config.platform_id
   zone        = var.default_zone
 
   resources {
-    cores         = 2
-    memory        = 2
-    core_fraction = 5
+    cores         = var.web_instance_config.cores
+    memory        = var.web_instance_config.memory
+    core_fraction = var.web_instance_config.core_fraction
   }
 
   scheduling_policy {
-    preemptible = true
+    preemptible = var.web_instance_config.preemptible
   }
 
   boot_disk {
     initialize_params {
-      image_id = "fd8bu5qanc4labigou11"
-      size =  10
-      type = "network-hdd"
+      image_id = var.web_instance_config.image_id
+      size     = var.web_instance_config.disk_size
+      type     = var.web_instance_config.disk_type
     }
   }
 
   network_interface {
     subnet_id          = yandex_vpc_subnet.develop.id
     security_group_ids = [yandex_vpc_security_group.example.id]
-    nat                = true
+    nat                = var.web_instance_config.nat
   }
 
   metadata = {
