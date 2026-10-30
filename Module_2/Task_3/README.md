@@ -7,7 +7,7 @@
 
 ## 2) У web ssh-ключ вписан строкой, а по заданию его нужно читать через file() в local, как вы сделали для db и storage;
 ### Решение 
-Изменен Файл [count-vm.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/count-vm.tf) \
+Изменен Файл [count-vm.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/count-vm.tf) 
 
 ## 3) Группы инвентаря должны называться webservers, databases и storage, а у вас web и db;
 ### Решение 
