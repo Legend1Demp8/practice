@@ -5,8 +5,8 @@
 
 ## 2) Модуль должен возвращать информацию о yandex_vpc_subnet, а у вас наружу отдаются только два id. Отдайте объект подсети целиком;
 ### Решение
-Изменен Файл [modules/vpc/outputs.tf](https://github.com/Legend1Demp8/terraform-04/blob/terraform-04/modules/vpc/outputs.tf)
-Изменен Файл [main.tf](https://github.com/Legend1Demp8/terraform-04/blob/terraform-04/main.tf) \
+Изменен Файл [modules/vpc/outputs.tf](https://github.com/Legend1Demp8/terraform-04/blob/terraform-04/modules/vpc/outputs.tf) \
+Изменен Файл [main.tf](https://github.com/Legend1Demp8/terraform-04/blob/terraform-04/main.tf) 
 
 ## 3) В задании прямо сказано «хардкод значения не допустимы», а в вызовах модулей зоны, cidr, platform и image_family прописаны строками;
 ### Решение
