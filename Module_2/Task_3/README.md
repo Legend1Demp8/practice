@@ -12,6 +12,7 @@
 ## 3) Группы инвентаря должны называться webservers, databases и storage, а у вас web и db;
 ### Решение 
 Изменен Файл [ansible.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/ansible.tf) \
+Изменен Файл [inventory.ini](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/inventory.ini) \
 <img width="640" height="158" alt="image" src="https://github.com/user-attachments/assets/3fe1b80c-af0d-4c8a-b040-52801555e20c" />
 
 ## 4) Код нужно закоммитить в ветку terraform-03 и прислать ссылку на коммит.
