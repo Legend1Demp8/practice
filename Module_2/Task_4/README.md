@@ -1,16 +1,24 @@
 ## Доработка
 ## 1) В задании 2.4 сказано заменить ресурсы yandex_vpc_network и yandex_vpc_subnet модулем, а старые develop, develop_1 и develop_2 остались в main.tf и создаются впустую;
 ### Решение
-Изменен Файл [main.tf]()
-## 2) 
+Изменен Файл [main.tf](https://github.com/Legend1Demp8/terraform-04/blob/terraform-04/main.tf)
 
-## 3)
+## 2) Модуль должен возвращать информацию о yandex_vpc_subnet, а у вас наружу отдаются только два id. Отдайте объект подсети целиком;
+### Решение
+Изменен Файл [modules/vpc/outputs.tf](https://github.com/Legend1Demp8/terraform-04/blob/terraform-04/modules/vpc/outputs.tf)
+
+## 3) В задании прямо сказано «хардкод значения не допустимы», а в вызовах модулей зоны, cidr, platform и image_family прописаны строками;
+### Решение
+Изменен Файл [main.tf](https://github.com/Legend1Demp8/terraform-04/blob/terraform-04/main.tf)
+Изменен Файл [variables.tf](https://github.com/Legend1Demp8/terraform-04/blob/terraform-04/variables.tf)
 
 ## 4) Remote-модуль лучше пинить по тегу или коммиту, а не ref=main;
-Изменен Файл [main.tf]()
+### Решение
+Изменен Файл [main.tf](https://github.com/Legend1Demp8/terraform-04/blob/terraform-04/main.tf)
 
 ## 5) По правилам приёма нужна ветка terraform-04, а код лежит в main.
-[github]()
+### Решение
+[github](https://github.com/Legend1Demp8/terraform-04/tree/terraform-04)
 
 
 ## Задание 1
