@@ -6,6 +6,7 @@
 ## 2) Код нужно закоммитить в ветку terraform-03 и прислать ссылку на коммит.
 [github](https://github.com/Legend1Demp8/terraform-03/tree/terraform-03)
 
+---
 
 ## Для общего зачёта создайте в вашем GitHub-репозитории новую ветку terraform-03. Закоммитьте в эту ветку свой финальный код проекта, пришлите ссылку на коммит.
 [github](https://github.com/Legend1Demp8/terraform-03/tree/terraform-03)
