@@ -1,5 +1,9 @@
 ## Доработка
-## 1) 
+## 1) image_id строкой, platform_id, cores, memory, core_fraction и размеры дисков прямо в ресурсах;
+### Решение
+Изменен Файл [count-vm.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/count-vm.tf \
+Изменен Файл [disk_vm.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/disk_vm.tf) \
+Изменен Файл [variables.tf](https://github.com/Legend1Demp8/practice/blob/main/Module_2/Task_3/variables.tf) \
 
 ## 2) У web ssh-ключ вписан строкой, а по заданию его нужно читать через file() в local, как вы сделали для db и storage;
 ### Решение 
