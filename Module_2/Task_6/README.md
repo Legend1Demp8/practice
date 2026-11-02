@@ -6,7 +6,7 @@
 <img width="1065" height="211" alt="image" src="https://github.com/user-attachments/assets/becd52fc-57b8-45d3-acbc-c2df1aefa16a" />
 
 ### 2. Использую ранее созданный YDB
-<img width="906" height="304" alt="image" src="https://github.com/user-attachments/assets/86fe6b8f-146c-4309-b2ff-6a7e5a4b6334" />
+<img width="1363" height="211" alt="image" src="https://github.com/user-attachments/assets/7659eae1-a494-472d-896d-df883f9d0c6d" />
 
 ### 3. Backend.tf
 - [backend.tf](https://github.com/Legend1Demp8/terraform-06/blob/master/backend.tf)
