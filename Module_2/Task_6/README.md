@@ -11,6 +11,7 @@
 ### 3. Проверяю State-lock в два окна
 <img width="1568" height="298" alt="image" src="https://github.com/user-attachments/assets/67ee95b1-d4ab-4d8b-99d8-772b1f4cbdb8" />
 <img width="1537" height="247" alt="image" src="https://github.com/user-attachments/assets/410ff922-0858-43ff-b283-739114f98118" />
+
 ```
 ╷
 │ Error: Error acquiring the state lock
