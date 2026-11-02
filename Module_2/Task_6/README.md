@@ -5,11 +5,35 @@
 ### 1. Использую ранее созданный S3
 <img width="1065" height="211" alt="image" src="https://github.com/user-attachments/assets/becd52fc-57b8-45d3-acbc-c2df1aefa16a" />
 
-### 2. Использую ранее созданный YDB
-<img width="1363" height="211" alt="image" src="https://github.com/user-attachments/assets/7659eae1-a494-472d-896d-df883f9d0c6d" />
-
-### 3. Backend.tf
+### 2. Backend.tf
 - [backend.tf](https://github.com/Legend1Demp8/terraform-06/blob/master/backend.tf)
+
+### 3. Проверяю State-lock в два окна
+<img width="1568" height="298" alt="image" src="https://github.com/user-attachments/assets/67ee95b1-d4ab-4d8b-99d8-772b1f4cbdb8" />
+<img width="1537" height="247" alt="image" src="https://github.com/user-attachments/assets/410ff922-0858-43ff-b283-739114f98118" />
+```
+╷
+│ Error: Error acquiring the state lock
+│
+│ Error message: operation error S3: PutObject, https response error StatusCode: 412, RequestID: 78a0c09dff1786d6, HostID: , api error PreconditionFailed: At least one of the pre-conditions you
+│ specified did not hold
+│ Lock Info:
+│   ID:        e2403d04-0164-9445-7300-435af86b4ba6
+│   Path:      terraform-state-netology-06/terraform.tfstate
+│   Operation: OperationTypeApply
+│   Who:       root@gw-spb
+│   Version:   1.16.5
+│   Created:   2026-11-02 14:09:21.159567944 +0000 UTC
+│   Info:
+│
+│
+│ Terraform acquires a state lock to protect the state from being written
+│ by multiple users at the same time. Please resolve the issue above and try
+│ again. For most commands, you can disable locking with the "-lock=false"
+│ flag, but this is not recommended.
+╵
+```
+
 
 ## Логика проекта
 ### 1. Создаем сеть
