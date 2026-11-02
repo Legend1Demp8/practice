@@ -9,22 +9,22 @@
 - [backend.tf](https://github.com/Legend1Demp8/terraform-06/blob/master/backend.tf)
 
 ### 3. Проверяю State-lock в два окна
-<img width="1568" height="298" alt="image" src="https://github.com/user-attachments/assets/67ee95b1-d4ab-4d8b-99d8-772b1f4cbdb8" />
-<img width="1537" height="247" alt="image" src="https://github.com/user-attachments/assets/410ff922-0858-43ff-b283-739114f98118" />
+<img width="1605" height="254" alt="image" src="https://github.com/user-attachments/assets/5e266e79-9f28-4183-81b9-0a21f74ce62d" />
+<img width="1611" height="320" alt="image" src="https://github.com/user-attachments/assets/5f4afef3-085b-49c1-85a7-915f4123c44a" />
+
 
 ```
-╷
-│ Error: Error acquiring the state lock
+ Error: Error acquiring the state lock
 │
-│ Error message: operation error S3: PutObject, https response error StatusCode: 412, RequestID: 78a0c09dff1786d6, HostID: , api error PreconditionFailed: At least one of the pre-conditions you
+│ Error message: operation error S3: PutObject, https response error StatusCode: 412, RequestID: 316d86c1f170a784, HostID: , api error PreconditionFailed: At least one of the pre-conditions you
 │ specified did not hold
 │ Lock Info:
-│   ID:        e2403d04-0164-9445-7300-435af86b4ba6
+│   ID:        172eeb44-7ce0-e960-bc21-99c02f58d4aa
 │   Path:      terraform-state-netology-06/terraform.tfstate
 │   Operation: OperationTypeApply
 │   Who:       root@gw-spb
 │   Version:   1.16.5
-│   Created:   2026-11-02 14:09:21.159567944 +0000 UTC
+│   Created:   2026-11-02 16:07:51.392601776 +0000 UTC
 │   Info:
 │
 │
@@ -32,7 +32,6 @@
 │ by multiple users at the same time. Please resolve the issue above and try
 │ again. For most commands, you can disable locking with the "-lock=false"
 │ flag, but this is not recommended.
-╵
 ```
 
 
