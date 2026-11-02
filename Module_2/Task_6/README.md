@@ -1,5 +1,7 @@
-## Git Проекта
+## Git Terraform Проекта
 [Git](https://github.com/Legend1Demp8/terraform-06)
+## Git Python Backend Проекта
+[Git](https://github.com/Legend1Demp8/netology-python)
 
 ## Подготовка
 ### 1. Использую ранее созданный S3
