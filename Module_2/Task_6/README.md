@@ -29,7 +29,7 @@
 ### 8. Создаем БД
 <img width="841" height="337" alt="image" src="https://github.com/user-attachments/assets/f7036ae4-f779-4c46-884c-ab5edf987d3a" />
 
-### 9. Создаем пользователя
+### 9. Создаем пользователя в БД
 <img width="1341" height="336" alt="image" src="https://github.com/user-attachments/assets/c5a2a084-dc63-4a3b-961d-36a8bc66c2e2" />
 
 ### 8. Создаем ВМ, ВМ в момент запуска билдит образ заливает в реджистри и запускает его с коннектом к БД
