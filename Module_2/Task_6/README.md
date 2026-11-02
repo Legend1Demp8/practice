@@ -63,6 +63,6 @@
 5) Сеть и подсеть
 - [network.tf](https://github.com/Legend1Demp8/terraform-06/blob/master/network.tf)
 6) Cloud init для ВМ
-[cloud-init.yml](https://github.com/Legend1Demp8/terraform-06/blob/master/cloud-init.yml)
+- [cloud-init.yml](https://github.com/Legend1Demp8/terraform-06/blob/master/cloud-init.yml)
 7) База данных Mysql
-[mysql.tf](https://github.com/Legend1Demp8/terraform-06/blob/master/mysql.tf)
+- [mysql.tf](https://github.com/Legend1Demp8/terraform-06/blob/master/mysql.tf)
