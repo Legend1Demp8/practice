@@ -16,7 +16,9 @@
 ## Задача 3
 ### Tasks должны: скачать статику LightHouse, установить Nginx или любой другой веб-сервер, настроить его конфиг для открытия LightHouse, запустить веб-сервер.
 ### Результат
-[site.yml]()
+[site.yml]() \
+<img width="843" height="378" alt="image" src="https://github.com/user-attachments/assets/b67ce3eb-2e5e-466d-b567-c3648206a190" />
+<img width="959" height="430" alt="image" src="https://github.com/user-attachments/assets/7d5b935f-55a6-4ff9-8407-675e9ccef3a0" />
 
 ## Задача 4
 ### Подготовьте свой inventory-файл prod.yml.
