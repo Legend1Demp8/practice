@@ -62,12 +62,12 @@ Check не выполняется поскольку дальше чем кло�
 ## Задача 7
 ### Запустите playbook на prod.yml окружении с флагом --diff. Убедитесь, что изменения на системе произведены.
 ansible-playbook -i inventory/prod.yml site.yml --diff
-
+<img width="950" height="177" alt="image" src="https://github.com/user-attachments/assets/b364733f-112c-47c9-b6c9-74acd5c02f88" />
 
 ## Задача 8
 ### Повторно запустите playbook с флагом --diff и убедитесь, что playbook идемпотентен.
 ansible-playbook -i inventory/prod.yml site.yml --diff
-
+<img width="965" height="156" alt="image" src="https://github.com/user-attachments/assets/a59d5ca5-db45-4e63-b3bc-a0a43db1da12" />
 
 ## Задача 9
 ### Подготовьте README.md-файл по своему playbook.
