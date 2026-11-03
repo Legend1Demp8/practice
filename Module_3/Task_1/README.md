@@ -56,7 +56,7 @@ lighthouse:
 ## Задача 6
 ### Попробуйте запустить playbook на этом окружении с флагом --check
 ### Решение
-ansible-playbook -i inventory/prod.yml site.yml --check
+ansible-playbook -i inventory/prod.yml site.yml --check \
 Check не выполняется поскольку дальше чем клонирования git репозитория мы не уходим
 
 ## Задача 7
