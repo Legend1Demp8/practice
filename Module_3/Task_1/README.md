@@ -48,7 +48,7 @@ ansible-playbook -i inventory/prod.yml site.yml --diff
 
 ## Задача 9
 ### Подготовьте README.md-файл по своему playbook.
-[README.md](https://github.com/Legend1Demp8/ansible-03/blob/08-ansible-03-yandex/README.md))
+[README.md](https://github.com/Legend1Demp8/ansible-03/blob/08-ansible-03-yandex/README.md)
 
 ## Задача 10
 ### Готовый playbook выложите в свой репозиторий, поставьте тег 08-ansible-03-yandex
