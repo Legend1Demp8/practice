@@ -6,17 +6,15 @@
 ## Задача 1
 ### Допишите плейбук из задания 2 (Ранее были 2 Плея Vector + Clickhouse) добавив плей LightHouse
 ### Результат
-[site.yml]()
+[site.yml](https://github.com/Legend1Demp8/ansible-03/blob/08-ansible-03-yandex/site.yml)
 
 ## Задача 2
-### Рекомендация
-### Результат
-Спасибо за рекомендацию
+### Рекомендация использования
 
 ## Задача 3
 ### Tasks должны: скачать статику LightHouse, установить Nginx или любой другой веб-сервер, настроить его конфиг для открытия LightHouse, запустить веб-сервер.
 ### Результат
-[site.yml]() \
+[site.yml](https://github.com/Legend1Demp8/ansible-03/blob/08-ansible-03-yandex/site.yml) \
 <img width="843" height="378" alt="image" src="https://github.com/user-attachments/assets/b67ce3eb-2e5e-466d-b567-c3648206a190" />
 <img width="959" height="430" alt="image" src="https://github.com/user-attachments/assets/7d5b935f-55a6-4ff9-8407-675e9ccef3a0" />
 
@@ -24,30 +22,7 @@
 ### Подготовьте свой inventory-файл prod.yml.
 ### Результат
 Файл инвентори создается автоматически на основе terraform проекта
-```
-cat inventory/prod.yml
----
-clickhouse:
-  hosts:
-    clickhouse-01:
-      ansible_host: 158.160.171.29
-      ansible_user: ansible
-      ansible_connection: ssh
-
-vector:
-  hosts:
-    vector-01:
-      ansible_host: 158.160.169.210
-      ansible_user: vector
-      ansible_connection: ssh
-
-lighthouse:
-  hosts:
-    lighthouse-01:
-      ansible_host: 158.160.198.249
-      ansible_user: lighthouse
-      ansible_connection: ssh
-```
+[inventory/prod.yml](https://github.com/Legend1Demp8/ansible-03/blob/08-ansible-03-yandex/inventory/prod.yml)
 
 ## Задача 5
 ### Запустите ansible-lint site.yml
@@ -73,8 +48,8 @@ ansible-playbook -i inventory/prod.yml site.yml --diff
 
 ## Задача 9
 ### Подготовьте README.md-файл по своему playbook.
-[README.md]()
+[README.md](https://github.com/Legend1Demp8/ansible-03/blob/08-ansible-03-yandex/README.md))
 
 ## Задача 10
 ### Готовый playbook выложите в свой репозиторий, поставьте тег 08-ansible-03-yandex
-[Git]()
+[Git](https://github.com/Legend1Demp8/ansible-03/tree/08-ansible-03-yandex)
