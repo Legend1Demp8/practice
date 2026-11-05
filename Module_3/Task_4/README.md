@@ -33,11 +33,11 @@ ansible-galaxy role init vector-role
 ### Решение
 1) vector-role:
 - vars [vars](https://github.com/Legend1Demp8/vector-role/blob/master/vars/main.yml)
-- default [default](https://github.com/Legend1Demp8/vector-role/tree/master/templates)
+- default [default](https://github.com/Legend1Demp8/vector-role/blob/master/defaults/main.yml)
 
 2) lighthouse-role:
 - vars [vars](https://github.com/Legend1Demp8/lighthouse-role/blob/master/vars/main.yml)
-- default [default](https://github.com/Legend1Demp8/lighthouse-role/tree/master/templates)
+- default [default](https://github.com/Legend1Demp8/lighthouse-role/blob/master/defaults/main.yml)
 
 ## Задание 5
 ### Перенести нужные шаблоны конфигов в templates
