@@ -1,8 +1,8 @@
 ## Git Проекта
 
 ## Git Ролей
-[vector-role](https://github.com/Legend1Demp8/vector-role) \
-[lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
+1) [vector-role](https://github.com/Legend1Demp8/vector-role) 
+2) [lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
 
 ## Задание 1
 ### Создайте в старой версии playbook файл requirements.yml и заполните его содержимым
@@ -41,13 +41,13 @@ ansible-galaxy role init vector-role
 ## Задание 5
 ### Перенести нужные шаблоны конфигов в templates
 ### Решение
-1) vector-role [templates](https://github.com/Legend1Demp8/vector-role/tree/master/templates) \
+1) vector-role [templates](https://github.com/Legend1Demp8/vector-role/tree/master/templates) 
 2) lighthouse-role [templates](https://github.com/Legend1Demp8/lighthouse-role/tree/master/templates)
 
 ## Задание 6
 ### Опишите в README.md обе роли и их параметры
 ### Решение
-1) vector-role [README.md](https://github.com/Legend1Demp8/vector-role/blob/master/README.md) \
+1) vector-role [README.md](https://github.com/Legend1Demp8/vector-role/blob/master/README.md) 
 2) lighthouse-role [README.md](https://github.com/Legend1Demp8/lighthouse-role/blob/master/README.md)
 
 ## Задание 7
@@ -60,13 +60,13 @@ ansible-galaxy role init vector-role
 ### Решение
 1) [vector-role](https://github.com/Legend1Demp8/vector-role) \
 2) [lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
-<img width="612" height="207" alt="image" src="https://github.com/user-attachments/assets/d33e53a9-6e09-4461-b9b1-34115b347117" />
+<img width="612" height="207" alt="image" src="https://github.com/user-attachments/assets/d33e53a9-6e09-4461-b9b1-34115b347117" /> \
 [requirements.yml]()
 
 ## Задание 9
 ### Переработайте playbook на использование roles. Не забудьте про зависимости LightHouse и возможности совмещения roles с tasks.
 ### Решение
-<img width="591" height="368" alt="image" src="https://github.com/user-attachments/assets/3f5cad46-f109-4c98-9790-65bb52e926f8" />
+<img width="591" height="368" alt="image" src="https://github.com/user-attachments/assets/3f5cad46-f109-4c98-9790-65bb52e926f8" /> \
 [site.yml]()
 
 ## Задание 10
