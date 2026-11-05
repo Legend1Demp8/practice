@@ -1,4 +1,5 @@
 ## Git Проекта
+[ansible-04](https://github.com/Legend1Demp8/ansible-04/blob/master/README.md)
 
 ## Git Ролей
 1) [vector-role](https://github.com/Legend1Demp8/vector-role) 
@@ -7,7 +8,7 @@
 ## Задание 1
 ### Создайте в старой версии playbook файл requirements.yml и заполните его содержимым
 ### Решение
-[requirements.yml]()
+[requirements.yml](https://github.com/Legend1Demp8/ansible-04/blob/master/requirements.yml)
 
 ## Задание 2
 ### При помощи ansible-galaxy скачайте себе эту роль
@@ -62,25 +63,25 @@ ansible-galaxy role init vector-role
 2) [lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
 
 <img width="612" height="207" alt="image" src="https://github.com/user-attachments/assets/d33e53a9-6e09-4461-b9b1-34115b347117" /> \
-[requirements.yml]()
+[requirements.yml](https://github.com/Legend1Demp8/ansible-04/blob/master/requirements.yml)
 
 ## Задание 9
 ### Переработайте playbook на использование roles. Не забудьте про зависимости LightHouse и возможности совмещения roles с tasks.
 ### Решение
 <img width="591" height="368" alt="image" src="https://github.com/user-attachments/assets/3f5cad46-f109-4c98-9790-65bb52e926f8" /> \
-[site.yml]()
+[site.yml](https://github.com/Legend1Demp8/ansible-04/blob/master/site.yml)
 
 ## Задание 10
 ### Выложите playbook в репозиторий.
 ### Решение
-[ansible-04]()
+[site.yml](https://github.com/Legend1Demp8/ansible-04/blob/master/site.yml)
 
 ## Задание 11
 ### В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
 ### Решение
 1) [vector-role](https://github.com/Legend1Demp8/vector-role)
 2) [lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
-3) [ansible-04]()
+3) [ansible-04](https://github.com/Legend1Demp8/ansible-04/blob/master/README.md)
 
 <img width="929" height="198" alt="image" src="https://github.com/user-attachments/assets/2996fd44-caf8-4808-bd48-cf23abbc12bc" />
 
