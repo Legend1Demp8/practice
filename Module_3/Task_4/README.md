@@ -81,3 +81,6 @@ ansible-galaxy role init vector-role
 1) [vector-role](https://github.com/Legend1Demp8/vector-role)
 2) [lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
 3) [ansible-04]()
+
+<img width="929" height="198" alt="image" src="https://github.com/user-attachments/assets/2996fd44-caf8-4808-bd48-cf23abbc12bc" />
+
