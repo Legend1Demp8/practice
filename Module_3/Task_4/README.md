@@ -1,7 +1,7 @@
 ## Git Проекта
 
 ## Git Ролей
-[vector-role](https://github.com/Legend1Demp8/vector-role)
+[vector-role](https://github.com/Legend1Demp8/vector-role) \
 [lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
 
 ## Задание 1
@@ -31,23 +31,23 @@ ansible-galaxy role init vector-role
 ### На основе tasks из старого playbook заполните новую role. Разнесите переменные между vars и default
 ### Решение
 vector-role:
-vars [vars](https://github.com/Legend1Demp8/vector-role/blob/master/vars/main.yml)
-default [default](https://github.com/Legend1Demp8/vector-role/tree/master/templates)
+- vars [vars](https://github.com/Legend1Demp8/vector-role/blob/master/vars/main.yml)
+- default [default](https://github.com/Legend1Demp8/vector-role/tree/master/templates)
 
 lighthouse-role:
-vars [vars](https://github.com/Legend1Demp8/lighthouse-role/blob/master/vars/main.yml)
-default [default](https://github.com/Legend1Demp8/lighthouse-role/tree/master/templates)
+- vars [vars](https://github.com/Legend1Demp8/lighthouse-role/blob/master/vars/main.yml)
+- default [default](https://github.com/Legend1Demp8/lighthouse-role/tree/master/templates)
 
 ## Задание 5
 ### Перенести нужные шаблоны конфигов в templates
 ### Решение
-vector-role [templates](https://github.com/Legend1Demp8/vector-role/tree/master/templates)
+vector-role [templates](https://github.com/Legend1Demp8/vector-role/tree/master/templates) \
 lighthouse-role [templates](https://github.com/Legend1Demp8/lighthouse-role/tree/master/templates)
 
 ## Задание 6
 ### Опишите в README.md обе роли и их параметры
 ### Решение
-vector-role [README.md](https://github.com/Legend1Demp8/vector-role/blob/master/README.md)
+vector-role [README.md](https://github.com/Legend1Demp8/vector-role/blob/master/README.md) \
 lighthouse-role [README.md](https://github.com/Legend1Demp8/lighthouse-role/blob/master/README.md)
 
 ## Задание 7
@@ -58,7 +58,7 @@ lighthouse-role [README.md](https://github.com/Legend1Demp8/lighthouse-role/blob
 ## Задание 8
 ### Выложите все roles в репозитории. Проставьте теги, используя семантическую нумерацию. Добавьте roles в requirements.yml в playbook.
 ### Решение
-[vector-role](https://github.com/Legend1Demp8/vector-role)
+[vector-role](https://github.com/Legend1Demp8/vector-role) \
 [lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
 <img width="612" height="207" alt="image" src="https://github.com/user-attachments/assets/d33e53a9-6e09-4461-b9b1-34115b347117" />
 [requirements.yml]()
