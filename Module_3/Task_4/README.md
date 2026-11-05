@@ -30,25 +30,25 @@ ansible-galaxy role init vector-role
 ## Задание 4
 ### На основе tasks из старого playbook заполните новую role. Разнесите переменные между vars и default
 ### Решение
-vector-role:
+1) vector-role:
 - vars [vars](https://github.com/Legend1Demp8/vector-role/blob/master/vars/main.yml)
 - default [default](https://github.com/Legend1Demp8/vector-role/tree/master/templates)
 
-lighthouse-role:
+2) lighthouse-role:
 - vars [vars](https://github.com/Legend1Demp8/lighthouse-role/blob/master/vars/main.yml)
 - default [default](https://github.com/Legend1Demp8/lighthouse-role/tree/master/templates)
 
 ## Задание 5
 ### Перенести нужные шаблоны конфигов в templates
 ### Решение
-vector-role [templates](https://github.com/Legend1Demp8/vector-role/tree/master/templates) \
-lighthouse-role [templates](https://github.com/Legend1Demp8/lighthouse-role/tree/master/templates)
+1) vector-role [templates](https://github.com/Legend1Demp8/vector-role/tree/master/templates) \
+2) lighthouse-role [templates](https://github.com/Legend1Demp8/lighthouse-role/tree/master/templates)
 
 ## Задание 6
 ### Опишите в README.md обе роли и их параметры
 ### Решение
-vector-role [README.md](https://github.com/Legend1Demp8/vector-role/blob/master/README.md) \
-lighthouse-role [README.md](https://github.com/Legend1Demp8/lighthouse-role/blob/master/README.md)
+1) vector-role [README.md](https://github.com/Legend1Demp8/vector-role/blob/master/README.md) \
+2) lighthouse-role [README.md](https://github.com/Legend1Demp8/lighthouse-role/blob/master/README.md)
 
 ## Задание 7
 ### Повторите шаги 3–6 для LightHouse. Помните, что одна роль должна настраивать один продукт.
@@ -58,8 +58,8 @@ lighthouse-role [README.md](https://github.com/Legend1Demp8/lighthouse-role/blob
 ## Задание 8
 ### Выложите все roles в репозитории. Проставьте теги, используя семантическую нумерацию. Добавьте roles в requirements.yml в playbook.
 ### Решение
-[vector-role](https://github.com/Legend1Demp8/vector-role) \
-[lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
+1) [vector-role](https://github.com/Legend1Demp8/vector-role) \
+2) [lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
 <img width="612" height="207" alt="image" src="https://github.com/user-attachments/assets/d33e53a9-6e09-4461-b9b1-34115b347117" />
 [requirements.yml]()
 
@@ -77,6 +77,6 @@ lighthouse-role [README.md](https://github.com/Legend1Demp8/lighthouse-role/blob
 ## Задание 11
 ### В ответе дайте ссылки на оба репозитория с roles и одну ссылку на репозиторий с playbook.
 ### Решение
-[vector-role](https://github.com/Legend1Demp8/vector-role)
-[lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
-[ansible-04]()
+1) [vector-role](https://github.com/Legend1Demp8/vector-role)
+2) [lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
+3) [ansible-04]()
