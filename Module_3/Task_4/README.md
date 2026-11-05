@@ -58,8 +58,9 @@ ansible-galaxy role init vector-role
 ## Задание 8
 ### Выложите все roles в репозитории. Проставьте теги, используя семантическую нумерацию. Добавьте roles в requirements.yml в playbook.
 ### Решение
-1) [vector-role](https://github.com/Legend1Demp8/vector-role) \
+1) [vector-role](https://github.com/Legend1Demp8/vector-role)
 2) [lighthouse-role](https://github.com/Legend1Demp8/lighthouse-role)
+
 <img width="612" height="207" alt="image" src="https://github.com/user-attachments/assets/d33e53a9-6e09-4461-b9b1-34115b347117" /> \
 [requirements.yml]()
 
