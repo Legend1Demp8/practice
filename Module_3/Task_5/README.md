@@ -118,6 +118,7 @@ cp ~/ansible-05/site.yml ./
 ### Установите collection из локального архива: ansible-galaxy collection install <archivename>.tar.gz.
 ### Решение
 <img width="1137" height="133" alt="image" src="https://github.com/user-attachments/assets/c18315ed-410e-42c2-9e53-f68a9b4f7b36" />
+
 ```
 ansible-galaxy collection install my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz
 ```
