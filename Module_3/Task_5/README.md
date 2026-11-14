@@ -88,7 +88,7 @@ ansible-galaxy role init my_own_role
 
 ## Задание 11
 ### Шаг 11. Создайте playbook для использования этой role.
-[site.yml]()
+[site.yml](https://github.com/Legend1Demp8/practice/blob/main/Module_3/Task_5/site.yml)
 
 ## Задание 12
 ### Заполните всю документацию по collection, выложите в свой репозиторий, поставьте тег 1.0.0 на этот коммит.
@@ -129,4 +129,5 @@ ansible-galaxy collection install my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz
 ## Задание 17
 ### В ответ необходимо прислать ссылки на collection и tar.gz архив
 ### Решение
+
 
