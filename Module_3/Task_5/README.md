@@ -5,9 +5,19 @@
 <img width="1238" height="214" alt="image" src="https://github.com/user-attachments/assets/cf437dc6-e59e-4ac9-869f-234a2df9b105" />
 
 ## Задание 1
-### Создайте в старой версии playbook файл requirements.yml и заполните его содержимым
+### В виртуальном окружении создайте новый my_own_module.py файл
 ### Решение
-[requirements.yml](https://github.com/Legend1Demp8/ansible-04/blob/master/requirements.yml)
+Выполнил
+
+## Задание 2
+### Наполните его содержимым: из статьи (https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_general.html#creating-a-module)
+### Решение
+Выполнил
+
+## Задание 3
+###  Заполните файл в соответствии с требованиями Ansible так, чтобы он выполнял основную задачу: module должен создавать текстовый файл на удалённом хосте по пути, определённом в параметре path, с содержимым, определённым в параметре content
+### Выполнил
+[my_own_module.py]()
 
 ## Задание 4
 ### Проверьте module на исполняемость локально.
