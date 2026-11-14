@@ -30,6 +30,7 @@ python hacking/test-module.py -m ./my_own_module.py -a 'path=/tmp/test_ansible_m
 ## Задание 5
 ### Напишите single task playbook и используйте module в нём.
 ### Решение
+[test-playbook.yml](https://github.com/Legend1Demp8/practice/blob/main/Module_3/Task_5/test_playbook.yml)
 ```
 ---
 - name: Test custom module
