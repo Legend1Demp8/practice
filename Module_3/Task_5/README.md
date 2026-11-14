@@ -31,6 +31,7 @@ python hacking/test-module.py -m ./my_own_module.py -a 'path=/tmp/test_ansible_m
 ### Напишите single task playbook и используйте module в нём.
 ### Решение
 ```
+---
 - name: Test custom module
   hosts: localhost
   connection: local
