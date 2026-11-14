@@ -82,12 +82,13 @@ cp my_own_module.py my_own_namespace/yandex_cloud_elk/plugins/modules/
 cd my_own_namespace/yandex_cloud_elk/roles
 ansible-galaxy role init my_own_role
 ```
-[plugins/modules/my_own_module.py]()
-[roles/my_own_role/defaults/main.yml]()
-[roles/my_own_role/tasks/main.yml]()
+[plugins/modules/my_own_module.py](https://github.com/Legend1Demp8/my_own_collection/blob/main/plugins/modules/my_own_module.py)  \
+[roles/my_own_role/defaults/main.yml](https://github.com/Legend1Demp8/my_own_collection/blob/main/roles/my_own_role/defaults/main.yml)  \
+[roles/my_own_role/tasks/main.yml](https://github.com/Legend1Demp8/my_own_collection/blob/main/roles/my_own_role/tasks/main.yml)  \
 
 ## Задание 11
 ### Шаг 11. Создайте playbook для использования этой role.
+[site.yml]()
 
 ## Задание 12
 ### Заполните всю документацию по collection, выложите в свой репозиторий, поставьте тег 1.0.0 на этот коммит.
