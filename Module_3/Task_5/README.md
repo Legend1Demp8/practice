@@ -48,6 +48,7 @@ python hacking/test-module.py -m ./my_own_module.py -a 'path=/tmp/test_ansible_m
 ### Проверьте через playbook на идемпотентность.
 ### Решение
 <img width="1633" height="422" alt="image" src="https://github.com/user-attachments/assets/5e159e91-7a4e-4174-8318-91a571373ee9" />
+
 ```
 ANSIBLE_LIBRARY=. ansible-playbook test_playbook.yml
 ```
