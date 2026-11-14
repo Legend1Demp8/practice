@@ -1,5 +1,6 @@
 ## Git Проекта
-[ansible-04](https://github.com/Legend1Demp8/ansible-04/blob/master/README.md)
+[my_own_collection](https://github.com/Legend1Demp8/my_own_collection)
+[my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz](https://github.com/Legend1Demp8/my_own_collection/releases/tag/1.0.0)
 
 ## Подготовка
 <img width="1238" height="214" alt="image" src="https://github.com/user-attachments/assets/cf437dc6-e59e-4ac9-869f-234a2df9b105" />
@@ -129,5 +130,7 @@ ansible-galaxy collection install my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz
 ## Задание 17
 ### В ответ необходимо прислать ссылки на collection и tar.gz архив
 ### Решение
+[my_own_collection](https://github.com/Legend1Demp8/my_own_collection)
+[my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz](https://github.com/Legend1Demp8/my_own_collection/releases/tag/1.0.0)
 
 
