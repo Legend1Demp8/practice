@@ -1,0 +1,10 @@
+---
+- name: Test my_own_role from collection
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  roles:
+    - role: my_own_namespace.yandex_cloud_elk.my_own_role
+      # При желании параметры можно переопределить здесь:
+      # my_own_module_path: "/tmp/custom_path.txt"
+      # my_own_module_content: "Custom text"
