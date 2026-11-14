@@ -83,4 +83,33 @@ ansible-galaxy role init my_own_role
 ### Решение
 ```
 ansible-galaxy collection build
+-rw-r--r-- 1 root root 5.6K Nov 14 11:22 my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz
 ```
+
+## Задание 14
+### Создайте ещё одну директорию любого наименования, перенесите туда single task playbook и архив c collection.
+### Решение
+```
+mkdir ~/cleanup_folder
+cd ~/cleanup_folder/
+cp ~/ansible-05/my_own_namespace/yandex_cloud_elk/my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz ./
+cp ~/ansible-05/site.yml ./
+```
+
+## Задание 15
+### Установите collection из локального архива: ansible-galaxy collection install <archivename>.tar.gz.
+### Решение
+<img width="1137" height="133" alt="image" src="https://github.com/user-attachments/assets/c18315ed-410e-42c2-9e53-f68a9b4f7b36" />
+```
+ansible-galaxy collection install my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz
+```
+
+## Задание 16
+### Запустите playbook, убедитесь, что он работает.
+### Решение
+<img width="1633" height="350" alt="image" src="https://github.com/user-attachments/assets/e0960ef3-3bfd-4983-8e54-60b1e47d1496" />
+
+## Задание 17
+### В ответ необходимо прислать ссылки на collection и tar.gz архив
+### Решение
+
