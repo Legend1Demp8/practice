@@ -130,7 +130,7 @@ ansible-galaxy collection install my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz
 ## Задание 17
 ### В ответ необходимо прислать ссылки на collection и tar.gz архив
 ### Решение
-[my_own_collection](https://github.com/Legend1Demp8/my_own_collection)
+[my_own_collection](https://github.com/Legend1Demp8/my_own_collection) \
 [my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz](https://github.com/Legend1Demp8/my_own_collection/releases/tag/1.0.0)
 
 
